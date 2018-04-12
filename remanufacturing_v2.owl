@@ -179,7 +179,7 @@
         <Class IRI="#UniqueID"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ValuePartition"/>
+        <Class IRI="#ValuePartitions"/>
     </Declaration>
     <Declaration>
         <Class IRI="#continuant"/>
@@ -463,7 +463,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DataErasurePartition"/>
-        <Class IRI="#ValuePartition"/>
+        <Class IRI="#ValuePartitions"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DecisionSupportCost"/>
@@ -618,7 +618,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RepairScrapPartition"/>
-        <Class IRI="#ValuePartition"/>
+        <Class IRI="#ValuePartitions"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RepairScrapPartition"/>
@@ -669,7 +669,7 @@
         <Class IRI="#PartFeature"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ValuePartition"/>
+        <Class IRI="#ValuePartitions"/>
         <Class IRI="#entity"/>
     </SubClassOf>
     <SubClassOf>
