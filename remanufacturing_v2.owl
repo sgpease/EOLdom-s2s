@@ -59,7 +59,7 @@
         <Class IRI="#IMEI"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ITCoreTechnicians"/>
+        <Class IRI="#ITTechnicians"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Inspection"/>
@@ -74,13 +74,13 @@
         <Class IRI="#ManagingDirector"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ManufacturingMachine"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ManufacturingMaterial"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ManufacturingProcess"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ManufacturingRig"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ManufacturingRoute"/>
@@ -134,6 +134,9 @@
         <Class IRI="#RealisedRiskCost"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Recycling"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#RefundPaid"/>
     </Declaration>
     <Declaration>
@@ -147,12 +150,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#SalesManager"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Scrap"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ScrapValue"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Serial"/>
@@ -192,6 +189,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#genericallydependantcontinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hasSpecificRecycleValue"/>
     </Declaration>
     <Declaration>
         <Class IRI="#independantcontinuant"/>
@@ -284,6 +284,12 @@
         <ObjectProperty IRI="#has_participant"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isPartIsFunctioningValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRecycleValueof"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#is_a"/>
     </Declaration>
     <Declaration>
@@ -293,7 +299,10 @@
         <ObjectProperty IRI="#ocurrent_part_of"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#performsProcess"/>
+        <ObjectProperty IRI="#performsManufacturingProcess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#performsRecycleProcess"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#preceded_by"/>
@@ -329,13 +338,13 @@
         <DataProperty IRI="#PartValue"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#ProcessCost"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#ScrapValue"/>
+        <DataProperty IRI="#ProcessingCost"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Serial"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSpecificRecycleValue"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasWage"/>
@@ -402,9 +411,6 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#hasPart"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="#hasPartFamiliy"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#hasPartFamily"/>
@@ -476,7 +482,7 @@
         <Class IRI="#UniqueID"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ITCoreTechnicians"/>
+        <Class IRI="#ITTechnicians"/>
         <Class IRI="#StaffRole"/>
     </SubClassOf>
     <SubClassOf>
@@ -504,16 +510,16 @@
         <Class IRI="#StaffRole"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ManufacturingMachine"/>
+        <Class IRI="#FacilityResources"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ManufacturingMaterial"/>
         <Class IRI="#FacilityResources"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ManufacturingProcess"/>
         <Class IRI="#process"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ManufacturingRig"/>
-        <Class IRI="#FacilityResources"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ManufacturingRoute"/>
@@ -575,7 +581,7 @@
         <Class IRI="#ProcessPlan"/>
         <ObjectUnionOf>
             <Class IRI="#ManufacturingProcess"/>
-            <Class IRI="#Scrap"/>
+            <Class IRI="#Recycling"/>
         </ObjectUnionOf>
     </SubClassOf>
     <SubClassOf>
@@ -593,6 +599,10 @@
     <SubClassOf>
         <Class IRI="#RealisedRiskCost"/>
         <Class IRI="#DecisionSupportCost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recycling"/>
+        <Class IRI="#process"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RefundPaid"/>
@@ -621,14 +631,6 @@
     <SubClassOf>
         <Class IRI="#SalesManager"/>
         <Class IRI="#StaffRole"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Scrap"/>
-        <Class IRI="#process"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ScrapValue"/>
-        <Class IRI="#PartFeature"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Serial"/>
@@ -677,6 +679,10 @@
     <SubClassOf>
         <Class IRI="#genericallydependantcontinuant"/>
         <Class IRI="#continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hasSpecificRecycleValue"/>
+        <Class IRI="#PartFeature"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#independantcontinuant"/>
@@ -739,7 +745,7 @@
         <NamedIndividual IRI="http://www.semanticweb.org/mmrs7/ontologies/2017/8/1013355"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#ManufacturingRig"/>
+        <Class IRI="#ManufacturingMachine"/>
         <NamedIndividual IRI="#BlanccoRig"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -747,7 +753,7 @@
         <NamedIndividual IRI="#CZC142FSKR"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#ITCoreTechnicians"/>
+        <Class IRI="#ITTechnicians"/>
         <NamedIndividual IRI="#ITCoreTechnicianWage"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -759,7 +765,7 @@
         <NamedIndividual IRI="#OperationsManagerWage"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#ManufacturingRig"/>
+        <Class IRI="#ManufacturingMachine"/>
         <NamedIndividual IRI="#PATTestingRig"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -823,12 +829,12 @@
         <Literal datatypeIRI="&xsd;float">48.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#ProcessCost"/>
+        <DataProperty IRI="#ProcessingCost"/>
         <NamedIndividual IRI="http://www.semanticweb.org/mmrs7/ontologies/2017/8/1013355"/>
         <Literal datatypeIRI="&xsd;float">20.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#ScrapValue"/>
+        <DataProperty IRI="#hasSpecificRecycleValue"/>
         <NamedIndividual IRI="http://www.semanticweb.org/mmrs7/ontologies/2017/8/1013355"/>
         <Literal datatypeIRI="&xsd;float">8.0</Literal>
     </DataPropertyAssertion>
@@ -853,12 +859,12 @@
         <Literal datatypeIRI="&xsd;float">35.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#ProcessCost"/>
+        <DataProperty IRI="#ProcessingCost"/>
         <NamedIndividual IRI="#CZC142FSKR"/>
         <Literal datatypeIRI="&xsd;float">10.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#ScrapValue"/>
+        <DataProperty IRI="#hasSpecificRecycleValue"/>
         <NamedIndividual IRI="#CZC142FSKR"/>
         <Literal datatypeIRI="&xsd;float">10.0</Literal>
     </DataPropertyAssertion>
@@ -1008,11 +1014,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProcessBoundary"/>
-        <Class IRI="#Repair"/>
+        <Class IRI="#Recycling"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProcessBoundary"/>
-        <Class IRI="#Scrap"/>
+        <Class IRI="#Repair"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProcessCost"/>
@@ -1032,11 +1038,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProcessCost"/>
-        <Class IRI="#Repair"/>
+        <Class IRI="#Recycling"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProcessCost"/>
-        <Class IRI="#Scrap"/>
+        <Class IRI="#Repair"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProcessPlan"/>
@@ -1059,11 +1065,20 @@
         <Class IRI="#UniqueID"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#performsProcess"/>
-        <ObjectUnionOf>
-            <Class IRI="#ITCoreTechnicians"/>
-            <Class IRI="#PhoneTechnician"/>
-        </ObjectUnionOf>
+        <ObjectProperty IRI="#isPartIsFunctioningValue"/>
+        <Class IRI="#PartValue"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRecycleValueof"/>
+        <Class IRI="#hasSpecificRecycleValue"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#performsManufacturingProcess"/>
+        <Class IRI="#PhoneTechnician"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#performsRecycleProcess"/>
+        <Class IRI="#StripScrapper"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#requiresManufacturingRoute"/>
@@ -1073,14 +1088,14 @@
         <ObjectProperty IRI="#requiresResource"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#requiresResource"/>
-            <Class IRI="#ManufacturingMaterial"/>
+            <Class IRI="#ManufacturingMachine"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#requiresResource"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#requiresResource"/>
-            <Class IRI="#ManufacturingRig"/>
+            <Class IRI="#ManufacturingMaterial"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -1109,7 +1124,7 @@
         <ObjectProperty IRI="#hasManufacturingResource"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasManufacturingResource"/>
-            <Class IRI="#ManufacturingRig"/>
+            <Class IRI="#ManufacturingMachine"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -1161,7 +1176,7 @@
         <ObjectProperty IRI="#hasRole"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasRole"/>
-            <Class IRI="#ITCoreTechnicians"/>
+            <Class IRI="#ITTechnicians"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -1228,46 +1243,60 @@
         <Class IRI="#RepairScrapPartition"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#performsProcess"/>
+        <ObjectProperty IRI="#isPartIsFunctioningValue"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isPartIsFunctioningValue"/>
+            <Class IRI="#RealisedPart"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRecycleValueof"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#performsProcess"/>
+            <ObjectProperty IRI="#isRecycleValueof"/>
+            <Class IRI="#RealisedPart"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#performsManufacturingProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performsManufacturingProcess"/>
             <Class IRI="#Assembly"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#performsProcess"/>
+        <ObjectProperty IRI="#performsManufacturingProcess"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#performsProcess"/>
+            <ObjectProperty IRI="#performsManufacturingProcess"/>
             <Class IRI="#DataErasure"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#performsProcess"/>
+        <ObjectProperty IRI="#performsManufacturingProcess"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#performsProcess"/>
+            <ObjectProperty IRI="#performsManufacturingProcess"/>
             <Class IRI="#Disassembly"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#performsProcess"/>
+        <ObjectProperty IRI="#performsManufacturingProcess"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#performsProcess"/>
+            <ObjectProperty IRI="#performsManufacturingProcess"/>
             <Class IRI="#Inspection"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#performsProcess"/>
+        <ObjectProperty IRI="#performsManufacturingProcess"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#performsProcess"/>
+            <ObjectProperty IRI="#performsManufacturingProcess"/>
             <Class IRI="#Repair"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#performsProcess"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#performsProcess"/>
-            <Class IRI="#Scrap"/>
-        </ObjectSomeValuesFrom>
+        <ObjectProperty IRI="#performsRecycleProcess"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#performsRecycleProcess"/>
+            <Class IRI="#Recycling"/>
+        </ObjectExactCardinality>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#requiresManufacturingRoute"/>
@@ -1294,17 +1323,17 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#requiresResource"/>
-        <Class IRI="#Repair"/>
+        <Class IRI="#Recycling"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#requiresResource"/>
-        <Class IRI="#Scrap"/>
+        <Class IRI="#Repair"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#usesManufacturingResource"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#usesManufacturingResource"/>
-            <Class IRI="#ManufacturingRig"/>
+            <Class IRI="#ManufacturingMachine"/>
         </ObjectExactCardinality>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
@@ -1312,7 +1341,7 @@
         <DataProperty IRI="#LabelID"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#ProcessCost"/>
+        <DataProperty IRI="#ProcessingCost"/>
         <DataProperty IRI="#PartProcessingCost"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -1335,13 +1364,13 @@
         <DataProperty IRI="#PartValue"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
-        <DataProperty IRI="#ProcessCost"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#ScrapValue"/>
+        <DataProperty IRI="#ProcessingCost"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#Serial"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasSpecificRecycleValue"/>
     </FunctionalDataProperty>
     <DataPropertyDomain>
         <DataProperty IRI="#IMEI"/>
@@ -1368,16 +1397,16 @@
         <Class IRI="#PartValue"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#ScrapValue"/>
-        <Class IRI="#ScrapValue"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#Serial"/>
         <Class IRI="#Serial"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasSpecificRecycleValue"/>
+        <Class IRI="#hasSpecificRecycleValue"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasWage"/>
-        <Class IRI="#ITCoreTechnicians"/>
+        <Class IRI="#ITTechnicians"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasWage"/>
@@ -1443,21 +1472,46 @@
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#ProcessCost"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#ScrapValue"/>
+        <DataProperty IRI="#ProcessingCost"/>
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#Serial"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSpecificRecycleValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#ManufacturingMachine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Manufacturing Rig</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#ManufacturingMaterial</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">compatible part used in manufacture or remanufacture</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#requires"/>
         <IRI>#RealisedPart</IRI>
         <IRI>#ProcessPlan</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Recycling</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Turn into raw materials</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPartIsFunctioningValue</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">value if part is functioning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRecycleValueof</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Value of raw materials</Literal>
     </AnnotationAssertion>
 </Ontology>
 
