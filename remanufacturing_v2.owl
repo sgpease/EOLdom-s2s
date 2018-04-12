@@ -670,7 +670,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ValuePartitions"/>
-        <Class IRI="#entity"/>
+        <Class IRI="#non-realizabledependentcontinuant"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#continuant"/>
