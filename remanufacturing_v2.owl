@@ -29,6 +29,9 @@
         <Class IRI="#Assembly"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#AssetTrack"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ChassisColour"/>
     </Declaration>
     <Declaration>
@@ -54,6 +57,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#FacilityResources"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FunctionalTest"/>
     </Declaration>
     <Declaration>
         <Class IRI="#IMEI"/>
@@ -180,6 +186,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#ValuePartitions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VisualInspection"/>
     </Declaration>
     <Declaration>
         <Class IRI="#continuant"/>
@@ -407,6 +416,9 @@
         <AnnotationProperty IRI="#hasCapabilityFor"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="#hasEndTime"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="#hasMethod"/>
     </Declaration>
     <Declaration>
@@ -420,6 +432,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#hasRemanufacturingProcess"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#hasStartTime"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#hasStatus"/>
@@ -440,6 +455,10 @@
     <SubClassOf>
         <Class IRI="#Assembly"/>
         <Class IRI="#ManufacturingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssetTrack"/>
+        <Class IRI="#Inspection"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ChassisColour"/>
@@ -476,6 +495,10 @@
     <SubClassOf>
         <Class IRI="#FacilityResources"/>
         <Class IRI="#independantcontinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FunctionalTest"/>
+        <Class IRI="#Inspection"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#IMEI"/>
@@ -671,6 +694,10 @@
     <SubClassOf>
         <Class IRI="#ValuePartitions"/>
         <Class IRI="#non-realizabledependentcontinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VisualInspection"/>
+        <Class IRI="#Inspection"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#continuant"/>
@@ -1513,6 +1540,22 @@
         <IRI>#isRecycleValueof</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Value of raw materials</Literal>
     </AnnotationAssertion>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="#hasEndTime"/>
+        <IRI>#ManufacturingProcess</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="#hasEndTime"/>
+        <IRI>#Recycling</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="#hasStartTime"/>
+        <IRI>#ManufacturingProcess</IRI>
+    </AnnotationPropertyDomain>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty IRI="#hasStartTime"/>
+        <IRI>#Recycling</IRI>
+    </AnnotationPropertyDomain>
 </Ontology>
 
 
