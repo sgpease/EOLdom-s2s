@@ -22,7 +22,6 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl</Import>
     <Declaration>
         <Class IRI="#Age"/>
     </Declaration>
@@ -40,6 +39,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#DataErasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DecisionSupportCost"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Disassembly"/>
@@ -61,9 +63,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Inspection"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#JobTitle"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LabelID"/>
@@ -138,6 +137,9 @@
         <Class IRI="#SpecificVolume"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#StaffRole"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#StorageCapacity"/>
     </Declaration>
     <Declaration>
@@ -156,7 +158,55 @@
         <Class IRI="#Worker"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#continuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#disposition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#genericallydependantcontinuant"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#hasSpecificRecycleValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#independantcontinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#non-realizabledependentcontinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ocurrent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#one-dimensionaltemporalregion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#processboundary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#realizabledependentcontinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#spatiotemporalregion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#specificallydependentcontinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#temporalregion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#zero-dimensionaltemporalregion"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#adjacent_to"/>
@@ -400,12 +450,16 @@
         <Class IRI="#ManufacturingProcess"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#DecisionSupportCost"/>
+        <Class IRI="#independantcontinuant"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Disassembly"/>
         <Class IRI="#ManufacturingProcess"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FacilityResources"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <Class IRI="#independantcontinuant"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FailedtoDataErase"/>
@@ -421,15 +475,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ITTechnicians"/>
-        <Class IRI="#JobTitle"/>
+        <Class IRI="#StaffRole"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Inspection"/>
         <Class IRI="#ManufacturingProcess"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#JobTitle"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000023"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LabelID"/>
@@ -441,15 +491,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ManagingDirector"/>
-        <Class IRI="#JobTitle"/>
+        <Class IRI="#StaffRole"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ManufacturingProcess"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000144"/>
+        <Class IRI="#process"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ManufacturingRoute"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <Class IRI="#ocurrent"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Model"/>
@@ -457,15 +507,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OperationsManager"/>
-        <Class IRI="#JobTitle"/>
+        <Class IRI="#StaffRole"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PartFamily"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <Class IRI="#independantcontinuant"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PartFeature"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <Class IRI="#non-realizabledependentcontinuant"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PartGrade"/>
@@ -481,7 +531,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PhoneTechnician"/>
-        <Class IRI="#JobTitle"/>
+        <Class IRI="#StaffRole"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PowerSupply"/>
@@ -489,11 +539,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ProcessEnd"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000035"/>
+        <Class IRI="#processboundary"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ProcessStart"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000035"/>
+        <Class IRI="#processboundary"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RealisedPart"/>
@@ -501,11 +551,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RealisedRisk"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <Class IRI="#disposition"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Recycling"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000144"/>
+        <Class IRI="#process"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Repair"/>
@@ -517,7 +567,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SalesManager"/>
-        <Class IRI="#JobTitle"/>
+        <Class IRI="#StaffRole"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Serial"/>
@@ -525,11 +575,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ShopFloorManager"/>
-        <Class IRI="#JobTitle"/>
+        <Class IRI="#StaffRole"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SpecificVolume"/>
         <Class IRI="#PartFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaffRole"/>
+        <Class IRI="#role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#StorageCapacity"/>
@@ -537,11 +591,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#StripScrapper"/>
-        <Class IRI="#JobTitle"/>
+        <Class IRI="#StaffRole"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TechnicalSupervisor"/>
-        <Class IRI="#JobTitle"/>
+        <Class IRI="#StaffRole"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UniqueID"/>
@@ -556,8 +610,68 @@
         <Class IRI="#FacilityResources"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#continuant"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#disposition"/>
+        <Class IRI="#realizabledependentcontinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#genericallydependantcontinuant"/>
+        <Class IRI="#continuant"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#hasSpecificRecycleValue"/>
         <Class IRI="#PartFeature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#independantcontinuant"/>
+        <Class IRI="#continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#non-realizabledependentcontinuant"/>
+        <Class IRI="#specificallydependentcontinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ocurrent"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#one-dimensionaltemporalregion"/>
+        <Class IRI="#temporalregion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#process"/>
+        <Class IRI="#ocurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#processboundary"/>
+        <Class IRI="#ocurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#realizabledependentcontinuant"/>
+        <Class IRI="#specificallydependentcontinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#role"/>
+        <Class IRI="#realizabledependentcontinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#spatiotemporalregion"/>
+        <Class IRI="#ocurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#specificallydependentcontinuant"/>
+        <Class IRI="#continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#temporalregion"/>
+        <Class IRI="#ocurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#zero-dimensionaltemporalregion"/>
+        <Class IRI="#temporalregion"/>
     </SubClassOf>
     <ClassAssertion>
         <Class IRI="#RealisedPart"/>
@@ -789,6 +903,10 @@
         <ObjectProperty IRI="#hasValue"/>
     </FunctionalObjectProperty>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#derives_from"/>
+        <Class IRI="#DecisionSupportCost"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasManufacturingResource"/>
         <Class IRI="#FacilityResources"/>
     </ObjectPropertyDomain>
@@ -869,7 +987,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasRole"/>
-        <Class IRI="#JobTitle"/>
+        <Class IRI="#StaffRole"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasUniqueID"/>
@@ -914,6 +1032,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#derives_from"/>
             <Class IRI="#ManufacturingProcess"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#derives_from"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#derives_from"/>
+            <Class IRI="#processboundary"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
