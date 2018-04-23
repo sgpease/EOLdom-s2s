@@ -1,0 +1,590 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22#"
+     xml:base="http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasCapacity -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasCapacity"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasCost -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasCost">
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Cost"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasCostPerMinute -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasCostPerMinute"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasEnergyConsumption -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasEnergyConsumption">
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#EnergyConsumption"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasPart"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasValue -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasValue"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasWage -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasWage">
+        <rdfs:range rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Wage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasWeight -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasWeight"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#performs -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#performs"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#requires -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#requires">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22#hasUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22#hasUnit"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#inCurrency -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#inCurrency">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#wasCreatedAt -->
+
+    <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#wasCreatedAt">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22#ManufacturingEquipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22#ManufacturingEquipment">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22#ManufacturingMachine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22#ManufacturingMachine">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22#ManufacturingQuality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22#ManufacturingQuality">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22#hasUnit"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Assembly -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Assembly">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Battery -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Battery">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingProductComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Capacity -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Capacity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22#ManufacturingQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Cost -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Cost">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22#ManufacturingQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#DataErasure -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#DataErasure">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Disassembly -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Disassembly">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#EnergyConsumption -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#EnergyConsumption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22#ManufacturingQuality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasCostPerMinute"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Cost"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#HardDrive -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#HardDrive">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingProductComponent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasCapacity"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Capacity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ITTechnician -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ITTechnician">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Inspection -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Inspection">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Laptop -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Laptop">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingProduct"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasPart"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Battery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasPart"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#HardDrive"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasPart"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Screen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#LaptopAssembly -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#LaptopAssembly">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Assembly"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#LaptopDataErasure -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#LaptopDataErasure">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#DataErasure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#LaptopDisassembly -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#LaptopDisassembly">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Disassembly"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#LaptopInspection -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#LaptopInspection">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Inspection"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#LaptopRepair -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#LaptopRepair">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Repair"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManagingDirector -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManagingDirector">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingObject -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingObject">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasCost"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Cost"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasWeight"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Weight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#wasCreatedAt"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingProcess -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasCost"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Cost"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingProduct -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingProduct">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasPart"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingProductComponent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasValue"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Value"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>for the s2s case, it is the input product under study</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingProductComponent -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingProductComponent">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasCost"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Cost"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasWeight"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Weight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#MobilePhone -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#MobilePhone">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#MobilePhoneAssembly -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#MobilePhoneAssembly">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Assembly"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#MobilePhoneDataErasure -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#MobilePhoneDataErasure">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#DataErasure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#MobilePhoneDisassembly -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#MobilePhoneDisassembly">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Disassembly"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#MobilePhoneInspection -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#MobilePhoneInspection">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Inspection"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#MobilePhoneRepair -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#MobilePhoneRepair">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Repair"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#OperationManager -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#OperationManager">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Person -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Person">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#hasWage"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Wage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#performs"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#PhoneTechnician -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#PhoneTechnician">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Repair -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Repair">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#SalesManager -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#SalesManager">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Screen -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Screen">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ManufacturingProductComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ShopFloorManager -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#ShopFloorManager">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#StripScrapper -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#StripScrapper">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#TechnicalSupervisor -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#TechnicalSupervisor">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Value -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Value">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22#ManufacturingQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Wage -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Wage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22#ManufacturingQuality"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Weight -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl#Weight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22#ManufacturingQuality"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
