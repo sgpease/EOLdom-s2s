@@ -276,6 +276,9 @@
         <DataProperty IRI="#Serial"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasRunningCost"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasSpecificRecycleValue"/>
     </Declaration>
     <Declaration>
@@ -654,6 +657,11 @@
         <Literal datatypeIRI="&xsd;float">8.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasRunningCost"/>
+        <NamedIndividual IRI="#BlanccoRig"/>
+        <Literal datatypeIRI="&xsd;float">1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#InProcessPartStatus"/>
         <NamedIndividual IRI="#CZC142FSKR"/>
         <Literal datatypeIRI="&xsd;string">Refurbished_Sold</Literal>
@@ -697,6 +705,11 @@
         <DataProperty IRI="#hasWage"/>
         <NamedIndividual IRI="#OperationsManagerWage"/>
         <Literal datatypeIRI="&xsd;float">6.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRunningCost"/>
+        <NamedIndividual IRI="#PATTestingRig"/>
+        <Literal datatypeIRI="&xsd;float">2.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasWage"/>
