@@ -24,7 +24,7 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl</Import>
     <Declaration>
-        <Class IRI="#Assembly"/>
+        <Class IRI="#Assemble"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AssetTrack"/>
@@ -33,13 +33,10 @@
         <Class IRI="#ChassisColour"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ComponentProduct"/>
+        <Class IRI="#DataErase"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DataErasure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Disassembly"/>
+        <Class IRI="#Disassemble"/>
     </Declaration>
     <Declaration>
         <Class IRI="#FacilityResources"/>
@@ -60,7 +57,7 @@
         <Class IRI="#ITTechnicians"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Inspection"/>
+        <Class IRI="#Inspect"/>
     </Declaration>
     <Declaration>
         <Class IRI="#JobTitle"/>
@@ -96,16 +93,19 @@
         <Class IRI="#ProcessStart"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ProductFamily"/>
+        <Class IRI="#ProductAssembly"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RealisedProduct"/>
+        <Class IRI="#ProductComponent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductFamily"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RealisedRisk"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Recycling"/>
+        <Class IRI="#Recycle"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Repair"/>
@@ -138,7 +138,7 @@
         <Class IRI="#UniqueID"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#VisualInspection"/>
+        <Class IRI="#VisualInspect"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Worker"/>
@@ -345,27 +345,23 @@
         <AnnotationProperty IRI="#requires"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#Assembly"/>
+        <Class IRI="#Assemble"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000144"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AssetTrack"/>
-        <Class IRI="#Inspection"/>
+        <Class IRI="#Inspect"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ChassisColour"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ComponentProduct"/>
-        <Class IRI="#RealisedProduct"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DataErasure"/>
+        <Class IRI="#DataErase"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000144"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Disassembly"/>
+        <Class IRI="#Disassemble"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000144"/>
     </SubClassOf>
     <SubClassOf>
@@ -378,7 +374,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FunctionalTest"/>
-        <Class IRI="#Inspection"/>
+        <Class IRI="#Inspect"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Grade"/>
@@ -393,7 +389,7 @@
         <Class IRI="#JobTitle"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Inspection"/>
+        <Class IRI="#Inspect"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000144"/>
     </SubClassOf>
     <SubClassOf>
@@ -441,19 +437,23 @@
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000035"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ProductAssembly"/>
         <Class IRI="#ProductFamily"/>
-        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#RealisedProduct"/>
+        <Class IRI="#ProductComponent"/>
         <Class IRI="#ProductFamily"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductFamily"/>
+        <Class IRI="http://purl.obolibrary.org/obo/BFO_0000030"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RealisedRisk"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Recycling"/>
+        <Class IRI="#Recycle"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000144"/>
     </SubClassOf>
     <SubClassOf>
@@ -497,8 +497,8 @@
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#VisualInspection"/>
-        <Class IRI="#Inspection"/>
+        <Class IRI="#VisualInspect"/>
+        <Class IRI="#Inspect"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Worker"/>
@@ -517,7 +517,7 @@
         <Class IRI="#hasRefurbishedValue"/>
     </SubClassOf>
     <ClassAssertion>
-        <Class IRI="#RealisedProduct"/>
+        <Class IRI="#ProductAssembly"/>
         <NamedIndividual IRI="http://www.semanticweb.org/mmrs7/ontologies/2017/8/1013355"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -525,7 +525,7 @@
         <NamedIndividual IRI="#BlanccoRig"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#RealisedProduct"/>
+        <Class IRI="#ProductAssembly"/>
         <NamedIndividual IRI="#CZC142FSKR"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -751,7 +751,7 @@
     </FunctionalObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#contains"/>
-        <Class IRI="#RealisedProduct"/>
+        <Class IRI="#ProductAssembly"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#dependsOn"/>
@@ -759,23 +759,23 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#derives_from"/>
-        <Class IRI="#Assembly"/>
+        <Class IRI="#Assemble"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#derives_from"/>
-        <Class IRI="#DataErasure"/>
+        <Class IRI="#DataErase"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#derives_from"/>
-        <Class IRI="#Disassembly"/>
+        <Class IRI="#Disassemble"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#derives_from"/>
-        <Class IRI="#Inspection"/>
+        <Class IRI="#Inspect"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#derives_from"/>
-        <Class IRI="#Recycling"/>
+        <Class IRI="#Recycle"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#derives_from"/>
@@ -783,11 +783,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasExternalCharacteristic"/>
-        <Class IRI="#RealisedProduct"/>
+        <Class IRI="#ProductAssembly"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasInternalCharacteristic"/>
-        <Class IRI="#RealisedProduct"/>
+        <Class IRI="#ProductAssembly"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasManufacturingResource"/>
@@ -802,23 +802,23 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProcessBoundary"/>
-        <Class IRI="#Assembly"/>
+        <Class IRI="#Assemble"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProcessBoundary"/>
-        <Class IRI="#DataErasure"/>
+        <Class IRI="#DataErase"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProcessBoundary"/>
-        <Class IRI="#Disassembly"/>
+        <Class IRI="#Disassemble"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProcessBoundary"/>
-        <Class IRI="#Inspection"/>
+        <Class IRI="#Inspect"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProcessBoundary"/>
-        <Class IRI="#Recycling"/>
+        <Class IRI="#Recycle"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProcessBoundary"/>
@@ -834,22 +834,22 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasWorth"/>
-        <Class IRI="#RealisedProduct"/>
+        <Class IRI="#ProductAssembly"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#identifiedBy"/>
-        <Class IRI="#RealisedProduct"/>
+        <Class IRI="#ProductAssembly"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isInvolvedin"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isInvolvedin"/>
             <ObjectUnionOf>
-                <Class IRI="#Assembly"/>
-                <Class IRI="#DataErasure"/>
-                <Class IRI="#Disassembly"/>
-                <Class IRI="#Inspection"/>
-                <Class IRI="#Recycling"/>
+                <Class IRI="#Assemble"/>
+                <Class IRI="#DataErase"/>
+                <Class IRI="#Disassemble"/>
+                <Class IRI="#Inspect"/>
+                <Class IRI="#Recycle"/>
                 <Class IRI="#Repair"/>
             </ObjectUnionOf>
         </ObjectSomeValuesFrom>
@@ -860,7 +860,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#is_a"/>
-        <Class IRI="#ComponentProduct"/>
+        <Class IRI="#ProductComponent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#performsManufacturingProcess"/>
@@ -872,11 +872,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#requires"/>
-        <Class IRI="#Inspection"/>
+        <Class IRI="#Inspect"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#uses"/>
-        <Class IRI="#RealisedProduct"/>
+        <Class IRI="#ProductAssembly"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#contains"/>
@@ -896,7 +896,7 @@
         <ObjectProperty IRI="#dependsOn"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#dependsOn"/>
-            <Class IRI="#RealisedProduct"/>
+            <Class IRI="#ProductAssembly"/>
         </ObjectExactCardinality>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -983,7 +983,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasType"/>
-        <Class IRI="#RealisedProduct"/>
+        <Class IRI="#ProductAssembly"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasWorth"/>
@@ -1008,39 +1008,39 @@
         <ObjectProperty IRI="#isRecycleValueof"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#isRecycleValueof"/>
-            <Class IRI="#RealisedProduct"/>
+            <Class IRI="#ProductAssembly"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#is_a"/>
-        <Class IRI="#RealisedProduct"/>
+        <Class IRI="#ProductAssembly"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#performsManufacturingProcess"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#performsManufacturingProcess"/>
-            <Class IRI="#Assembly"/>
+            <Class IRI="#Assemble"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#performsManufacturingProcess"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#performsManufacturingProcess"/>
-            <Class IRI="#DataErasure"/>
+            <Class IRI="#DataErase"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#performsManufacturingProcess"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#performsManufacturingProcess"/>
-            <Class IRI="#Disassembly"/>
+            <Class IRI="#Disassemble"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#performsManufacturingProcess"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#performsManufacturingProcess"/>
-            <Class IRI="#Inspection"/>
+            <Class IRI="#Inspect"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -1054,7 +1054,7 @@
         <ObjectProperty IRI="#performsRecycleProcess"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#performsRecycleProcess"/>
-            <Class IRI="#Recycling"/>
+            <Class IRI="#Recycle"/>
         </ObjectExactCardinality>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -1075,7 +1075,7 @@
         <ObjectProperty IRI="#requires"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#requires"/>
-            <Class IRI="#VisualInspection"/>
+            <Class IRI="#VisualInspect"/>
         </ObjectSomeValuesFrom>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -1128,7 +1128,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasEOLStatus"/>
-        <Class IRI="#RealisedProduct"/>
+        <Class IRI="#ProductAssembly"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasRecycledValue"/>
@@ -1140,7 +1140,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#isInProcessStatus"/>
-        <Class IRI="#RealisedProduct"/>
+        <Class IRI="#ProductAssembly"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#isPaidWage"/>
@@ -1224,7 +1224,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Recycling</IRI>
+        <IRI>#Recycle</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Turn into raw materials</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
