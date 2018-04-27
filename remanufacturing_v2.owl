@@ -442,7 +442,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ProductComponent"/>
-        <Class IRI="#ProductFamily"/>
+        <Class IRI="#ProductAssembly"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ProductFamily"/>
@@ -795,10 +795,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasOutputQuality"/>
-        <ObjectSomeValuesFrom>
+        <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#hasOutputQuality"/>
             <Class IRI="#Grade"/>
-        </ObjectSomeValuesFrom>
+        </ObjectExactCardinality>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProcessBoundary"/>
