@@ -24,7 +24,7 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl</Import>
     <Declaration>
-        <Class IRI="#Assemble"/>
+        <Class IRI="#AssemblePhone"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AssetTrack"/>
@@ -33,10 +33,13 @@
         <Class IRI="#ChassisColour"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Cleaning"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#DataErase"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Disassemble"/>
+        <Class IRI="#DisassemblePhone"/>
     </Declaration>
     <Declaration>
         <Class IRI="#FacilityResources"/>
@@ -150,7 +153,10 @@
         <Class IRI="#hasRefurbishedValue"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#adjacent_to"/>
+        <ObjectProperty IRI="#IsPerformedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Requires"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#contains"/>
@@ -189,13 +195,7 @@
         <ObjectProperty IRI="#hasWorth"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#has_participant"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#identifiedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isInvolvedin"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isRecycleValueof"/>
@@ -204,22 +204,7 @@
         <ObjectProperty IRI="#is_a"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#located_in"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#ocurrent_part_of"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#performsManufacturingProcess"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#performsRecycleProcess"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#preceded_by"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#requires"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#uses"/>
@@ -235,6 +220,12 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasEOLStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProcessEnd"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProcessStart"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasRecycledValue"/>
@@ -258,10 +249,28 @@
         <NamedIndividual IRI="http://www.semanticweb.org/mmrs7/ontologies/2017/8/1013355"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#AssemblePhone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AssetTrack"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#BlanccoRig"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#CZC142FSKR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cleaning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DataErase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DisassemblePhone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FunctionalTest"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ITCoreTechnicianWage"/>
@@ -279,6 +288,39 @@
         <NamedIndividual IRI="#PhoneTechnicianWage"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ReplaceBattery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReplaceCasing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReplaceFan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReplaceGraphicsCard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReplaceKeyboard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReplaceMicrophone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReplaceNC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReplaceRAM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReplaceSATDrive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReplaceScreen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReplaceSpeaker"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#SalesManagerWage"/>
     </Declaration>
     <Declaration>
@@ -289,6 +331,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#TechnicalSupervisorWage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VisualInspect"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#Processes"/>
@@ -345,7 +390,7 @@
         <AnnotationProperty IRI="#requires"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#Assemble"/>
+        <Class IRI="#AssemblePhone"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000144"/>
     </SubClassOf>
     <SubClassOf>
@@ -357,11 +402,15 @@
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DataErase"/>
+        <Class IRI="#Cleaning"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000144"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Disassemble"/>
+        <Class IRI="#DataErase"/>
+        <Class IRI="#Cleaning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisassemblePhone"/>
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000144"/>
     </SubClassOf>
     <SubClassOf>
@@ -521,12 +570,36 @@
         <NamedIndividual IRI="http://www.semanticweb.org/mmrs7/ontologies/2017/8/1013355"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ProcessEnd"/>
+        <NamedIndividual IRI="#AssemblePhone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessEnd"/>
+        <NamedIndividual IRI="#AssetTrack"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Machine"/>
         <NamedIndividual IRI="#BlanccoRig"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ProductAssembly"/>
         <NamedIndividual IRI="#CZC142FSKR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessEnd"/>
+        <NamedIndividual IRI="#Cleaning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessEnd"/>
+        <NamedIndividual IRI="#DataErase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessEnd"/>
+        <NamedIndividual IRI="#DisassemblePhone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessEnd"/>
+        <NamedIndividual IRI="#FunctionalTest"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ITTechnicians"/>
@@ -549,6 +622,50 @@
         <NamedIndividual IRI="#PhoneTechnicianWage"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceBattery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceCasing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceFan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceGraphicsCard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceKeyboard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceMicrophone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceNC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceRAM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceSATDrive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceScreen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceSpeaker"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#SalesManager"/>
         <NamedIndividual IRI="#SalesManagerWage"/>
     </ClassAssertion>
@@ -563,6 +680,10 @@
     <ClassAssertion>
         <Class IRI="#TechnicalSupervisor"/>
         <NamedIndividual IRI="#TechnicalSupervisorWage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProcessEnd"/>
+        <NamedIndividual IRI="#VisualInspect"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasManufacturingResource"/>
@@ -600,6 +721,26 @@
         <Literal datatypeIRI="&xsd;string">Refurbished_Sold</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessEnd"/>
+        <NamedIndividual IRI="#AssemblePhone"/>
+        <Literal datatypeIRI="&xsd;dateTime">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#AssemblePhone"/>
+        <Literal datatypeIRI="&xsd;dateTime">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessEnd"/>
+        <NamedIndividual IRI="#AssetTrack"/>
+        <Literal datatypeIRI="&xsd;dateTime">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#AssetTrack"/>
+        <Literal datatypeIRI="&xsd;dateTime">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#hasRunningCost"/>
         <NamedIndividual IRI="#BlanccoRig"/>
         <Literal datatypeIRI="&xsd;float">1.0</Literal>
@@ -630,6 +771,46 @@
         <Literal datatypeIRI="&xsd;string">Refurbished_Sold</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessEnd"/>
+        <NamedIndividual IRI="#Cleaning"/>
+        <Literal datatypeIRI="&xsd;dateTime">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#Cleaning"/>
+        <Literal datatypeIRI="&xsd;dateTime">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#DataErase"/>
+        <Literal datatypeIRI="&xsd;dateTime">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#DataErase"/>
+        <Literal datatypeIRI="&xsd;dateTime">120</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessEnd"/>
+        <NamedIndividual IRI="#DisassemblePhone"/>
+        <Literal datatypeIRI="&xsd;dateTime">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#DisassemblePhone"/>
+        <Literal datatypeIRI="&xsd;dateTime">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#FunctionalTest"/>
+        <Literal datatypeIRI="&xsd;dateTime">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#FunctionalTest"/>
+        <Literal datatypeIRI="&xsd;dateTime">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#isPaidWage"/>
         <NamedIndividual IRI="#ITCoreTechnicianWage"/>
         <Literal datatypeIRI="&xsd;float">7.0</Literal>
@@ -655,6 +836,116 @@
         <Literal datatypeIRI="&xsd;float">5.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceBattery"/>
+        <Literal datatypeIRI="&xsd;dateTime">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#ReplaceBattery"/>
+        <Literal datatypeIRI="&xsd;dateTime">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceCasing"/>
+        <Literal datatypeIRI="&xsd;dateTime">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#ReplaceCasing"/>
+        <Literal datatypeIRI="&xsd;dateTime">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceFan"/>
+        <Literal datatypeIRI="&xsd;dateTime">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#ReplaceFan"/>
+        <Literal datatypeIRI="&xsd;dateTime">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceGraphicsCard"/>
+        <Literal datatypeIRI="&xsd;dateTime">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#ReplaceGraphicsCard"/>
+        <Literal datatypeIRI="&xsd;dateTime">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceKeyboard"/>
+        <Literal datatypeIRI="&xsd;dateTime">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#ReplaceKeyboard"/>
+        <Literal datatypeIRI="&xsd;dateTime">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceMicrophone"/>
+        <Literal datatypeIRI="&xsd;dateTime">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#ReplaceMicrophone"/>
+        <Literal datatypeIRI="&xsd;dateTime">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceNC"/>
+        <Literal datatypeIRI="&xsd;dateTime">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#ReplaceNC"/>
+        <Literal datatypeIRI="&xsd;dateTime">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceRAM"/>
+        <Literal datatypeIRI="&xsd;dateTime">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#ReplaceRAM"/>
+        <Literal datatypeIRI="&xsd;dateTime">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceSATDrive"/>
+        <Literal datatypeIRI="&xsd;dateTime">120</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#ReplaceSATDrive"/>
+        <Literal datatypeIRI="&xsd;dateTime">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceScreen"/>
+        <Literal datatypeIRI="&xsd;dateTime">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#ReplaceScreen"/>
+        <Literal datatypeIRI="&xsd;dateTime">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessEnd"/>
+        <NamedIndividual IRI="#ReplaceSpeaker"/>
+        <Literal datatypeIRI="&xsd;dateTime">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#ReplaceSpeaker"/>
+        <Literal datatypeIRI="&xsd;dateTime">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#isPaidWage"/>
         <NamedIndividual IRI="#SalesManagerWage"/>
         <Literal datatypeIRI="&xsd;float">4.0</Literal>
@@ -674,6 +965,24 @@
         <NamedIndividual IRI="#TechnicalSupervisorWage"/>
         <Literal datatypeIRI="&xsd;float">1.0</Literal>
     </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessEnd"/>
+        <NamedIndividual IRI="#VisualInspect"/>
+        <Literal datatypeIRI="&xsd;dateTime">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStart"/>
+        <NamedIndividual IRI="#VisualInspect"/>
+        <Literal datatypeIRI="&xsd;dateTime">0</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsPerformedBy"/>
+        <ObjectProperty IRI="#ocurrent_part_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Requires"/>
+        <ObjectProperty IRI="#ocurrent_part_of"/>
+    </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#contains"/>
         <ObjectProperty IRI="#hasType"/>
@@ -719,10 +1028,6 @@
         <ObjectProperty IRI="#hasType"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isInvolvedin"/>
-        <ObjectProperty IRI="#ocurrent_part_of"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#isRecycleValueof"/>
         <ObjectProperty IRI="#hasType"/>
     </SubObjectPropertyOf>
@@ -731,24 +1036,32 @@
         <ObjectProperty IRI="#continuant_part_of"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#performsManufacturingProcess"/>
-        <ObjectProperty IRI="#ocurrent_part_of"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#performsRecycleProcess"/>
-        <ObjectProperty IRI="#ocurrent_part_of"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#requires"/>
-        <ObjectProperty IRI="#isInvolvedin"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#uses"/>
         <ObjectProperty IRI="#hasType"/>
     </SubObjectPropertyOf>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#isInvolvedin"/>
-    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsPerformedBy"/>
+        <ObjectUnionOf>
+            <Class IRI="#Recycle"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#AssemblePhone"/>
+                <Class IRI="#Cleaning"/>
+                <Class IRI="#DisassemblePhone"/>
+                <Class IRI="#Inspect"/>
+                <Class IRI="#Repair"/>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Requires"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#AssemblePhone"/>
+            <Class IRI="#Cleaning"/>
+            <Class IRI="#DisassemblePhone"/>
+            <Class IRI="#Inspect"/>
+            <Class IRI="#Repair"/>
+        </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#contains"/>
         <Class IRI="#ProductAssembly"/>
@@ -759,7 +1072,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#derives_from"/>
-        <Class IRI="#Assemble"/>
+        <Class IRI="#AssemblePhone"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#derives_from"/>
@@ -767,7 +1080,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#derives_from"/>
-        <Class IRI="#Disassemble"/>
+        <Class IRI="#DisassemblePhone"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#derives_from"/>
@@ -802,7 +1115,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProcessBoundary"/>
-        <Class IRI="#Assemble"/>
+        <Class IRI="#AssemblePhone"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProcessBoundary"/>
@@ -810,7 +1123,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProcessBoundary"/>
-        <Class IRI="#Disassemble"/>
+        <Class IRI="#DisassemblePhone"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProcessBoundary"/>
@@ -841,20 +1154,6 @@
         <Class IRI="#ProductAssembly"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isInvolvedin"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#isInvolvedin"/>
-            <ObjectUnionOf>
-                <Class IRI="#Assemble"/>
-                <Class IRI="#DataErase"/>
-                <Class IRI="#Disassemble"/>
-                <Class IRI="#Inspect"/>
-                <Class IRI="#Recycle"/>
-                <Class IRI="#Repair"/>
-            </ObjectUnionOf>
-        </ObjectSomeValuesFrom>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isRecycleValueof"/>
         <Class IRI="#hasRecycledValue"/>
     </ObjectPropertyDomain>
@@ -863,21 +1162,33 @@
         <Class IRI="#ProductComponent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#performsManufacturingProcess"/>
-        <Class IRI="#PhoneTechnician"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#performsRecycleProcess"/>
-        <Class IRI="#StripScrapper"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#requires"/>
-        <Class IRI="#Inspect"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#uses"/>
         <Class IRI="#ProductAssembly"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsPerformedBy"/>
+        <ObjectUnionOf>
+            <Class IRI="#StripScrapper"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#ITTechnicians"/>
+                <Class IRI="#PhoneTechnician"/>
+            </ObjectIntersectionOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Requires"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Requires"/>
+            <Class IRI="#Machine"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Requires"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#Requires"/>
+            <Class IRI="#ProductComponent"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#contains"/>
         <ObjectExactCardinality cardinality="1">
@@ -1016,69 +1327,6 @@
         <Class IRI="#ProductAssembly"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#performsManufacturingProcess"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#performsManufacturingProcess"/>
-            <Class IRI="#Assemble"/>
-        </ObjectSomeValuesFrom>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#performsManufacturingProcess"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#performsManufacturingProcess"/>
-            <Class IRI="#DataErase"/>
-        </ObjectSomeValuesFrom>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#performsManufacturingProcess"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#performsManufacturingProcess"/>
-            <Class IRI="#Disassemble"/>
-        </ObjectSomeValuesFrom>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#performsManufacturingProcess"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#performsManufacturingProcess"/>
-            <Class IRI="#Inspect"/>
-        </ObjectSomeValuesFrom>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#performsManufacturingProcess"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#performsManufacturingProcess"/>
-            <Class IRI="#Repair"/>
-        </ObjectSomeValuesFrom>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#performsRecycleProcess"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#performsRecycleProcess"/>
-            <Class IRI="#Recycle"/>
-        </ObjectExactCardinality>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#requires"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#requires"/>
-            <Class IRI="#AssetTrack"/>
-        </ObjectSomeValuesFrom>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#requires"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#requires"/>
-            <Class IRI="#FunctionalTest"/>
-        </ObjectSomeValuesFrom>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#requires"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#requires"/>
-            <Class IRI="#VisualInspect"/>
-        </ObjectSomeValuesFrom>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#uses"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#uses"/>
@@ -1129,6 +1377,14 @@
     <DataPropertyDomain>
         <DataProperty IRI="#hasEOLStatus"/>
         <Class IRI="#ProductAssembly"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasProcessEnd"/>
+        <Class IRI="#ProcessEnd"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasProcessStart"/>
+        <Class IRI="#ProcessStart"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasRecycledValue"/>
