@@ -1,16 +1,14 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red27\green29\blue31;\red26\green26\blue26;\red255\green255\blue255;
+}
+{\*\expandedcolortbl;;\cssrgb\c14118\c15294\c16078;\cssrgb\c13333\c13333\c13333;\cssrgb\c100000\c100000\c100000;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10500\viewh8100\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\
-PREFIX owl: <http://www.w3.org/2002/07/owl#>\
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\
-SELECT ?subject ?object\
-	WHERE \{ ?subject rdfs:subClassOf ?object \}\
+\f0\fs24 \cf0 \
+PREFIX s2s: <http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#>\
 \
 \
 SELECT ?Location ?Time ?X ?Y ?Z ?PacketsSent ?Rate WHERE \{\
@@ -25,15 +23,74 @@ SELECT ?Location ?Time ?X ?Y ?Z ?PacketsSent ?Rate WHERE \{\
   ?PacketsPerSecond ontoloc:PacketsPerSecondValue ?Rate .\
 \}\
 \
+{\field{\*\fldinst{HYPERLINK "https://bitbucket.org/ginipease/remanontologys2s/raw/master/remanufacturing_v2.owl"}}{\fldrslt https://bitbucket.org/ginipease/remanontologys2s/raw/master/remanufacturing_v2.owl}}\
 \
 \
+\
+\
+PREFIX s2s: <{\field{\*\fldinst{HYPERLINK "https://bitbucket.org/ginipease/remanontologys2s/raw/master/remanufacturing_v2.owl"}}{\fldrslt https://raw.githubusercontent.com/sgpease/EOLdom-s2s/master/rdf-xml/remanufacturing_v2}}#>\
+select ?ind ?lastprocess ?endT ?sttT ?duration ?role where \{ \
+  ?ind rdf:type s2s:ProductAssembly .\
+  ?ind s2s:hasLastProcess ?lastprocess .\
+  ?lastprocess s2s:hasProcessEnd ?endT .\
+  ?lastprocess s2s:hasProcessStart ?sttT .\
+  ?lastprocess s2s:isPerformedBy ?role .\
+BIND ((MINUTES(?endT) - MINUTES(?sttT)) AS ?duration)\
+\} ORDER BY ASC(?ind)\
+\
+\'97\'97\'97\'97\
+PREFIX s2s: <http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#>\
+select ?ind ?lastprocess ?endT ?sttT ?duration where \{ \
+  ?ind rdf:type s2s:ProductAssembly .\
+  ?ind s2s:hasLastProcess ?lastprocess .\
+  ?lastprocess s2s:hasProcessEnd ?endT .\
+  ?lastprocess s2s:hasProcessStart ?sttT .\
+\pard\pardeftab720\sl300\partightenfactor0
+
+\f1\fs26 \cf3 \cb4 \expnd0\expndtw0\kerning0
+BIND ((
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 ?endT
+\f1\fs26 \cf3 \cb4 \expnd0\expndtw0\kerning0
+ - 
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 ?sttT
+\f1\fs26 \cf3 \cb4 \expnd0\expndtw0\kerning0
+) AS ?
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 duration
+\f1\fs26 \cf3 \cb4 \expnd0\expndtw0\kerning0
+)
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf0 \'97\'97\'97\'97\'97\
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf0 SELECT *\
+\cf0 \} ORDER BY ASC(?ind)\
+\
+\'97\'97\'97\'97\
+PREFIX s2s: <http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#>\
+SELECT ?ind ?lastprocess ?endT\
+WHERE \{\
+  ?ind rdf:type s2s:ProductAssembly .\
+  ?ind s2s:hasLastProcess ?lastprocess .\
+  ?lastprocess s2s:hasProcessEnd ?endT .\
+\} ORDER BY ASC(?ind)\
+\
+\'97\'97\'97\'97\
+PREFIX s2s: <http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#>\
+SELECT ?ind ?process\
+WHERE \{\
+?ind rdf:type s2s:ProductAssembly .\
+  ?ind s2s:hasLastProcess ?process .\
+\} ORDER BY ASC(?ind)\
+\'97\'97\'97\
+PREFIX s2s: <http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#>\
+SELECT ?ind\
+WHERE \{\
+?ind rdf:type s2s:ProductAssembly .\
+\
+\} ORDER BY ASC(?ind)\
+\'97\'97\'97\'97\'97\
+PREFIX s2s: <http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#>\
+SELECT *\
 WHERE \{\
 ?ind rdf:type ?type .\
-\}\
+\} ORDER BY ASC(?ind)\
 \'97\'97\'97\'97\'97\
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\
 PREFIX owl: <http://www.w3.org/2002/07/owl#>\
