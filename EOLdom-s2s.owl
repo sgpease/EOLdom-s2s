@@ -10,13 +10,13 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing"
+     xml:base="https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing">
-    <Prefix name="" IRI="http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing"/>
+     ontologyIRI="https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s">
+    <Prefix name="" IRI="https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -249,7 +249,7 @@
         <DataProperty IRI="#isPaidWage"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/mmrs7/ontologies/2017/8/1013355"/>
+        <NamedIndividual IRI="https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s/1013355"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#AssetTrack"/>
@@ -536,7 +536,7 @@
     </SubClassOf>
     <ClassAssertion>
         <Class IRI="#ProductAssembly"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/mmrs7/ontologies/2017/8/1013355"/>
+        <NamedIndividual IRI="https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s/1013355"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ProcessEnd"/>
@@ -637,7 +637,7 @@
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasLastProcess"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/mmrs7/ontologies/2017/8/1013355"/>
+        <NamedIndividual IRI="https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s/1013355"/>
         <NamedIndividual IRI="#ReplaceBattery"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -657,27 +657,27 @@
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEOLStatus"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/mmrs7/ontologies/2017/8/1013355"/>
+        <NamedIndividual IRI="https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s/1013355"/>
         <Literal datatypeIRI="&xsd;string">Refurbished</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasRecycledValue"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/mmrs7/ontologies/2017/8/1013355"/>
+        <NamedIndividual IRI="https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s/1013355"/>
         <Literal datatypeIRI="&xsd;float">8.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasRefurbishedValue"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/mmrs7/ontologies/2017/8/1013355"/>
+        <NamedIndividual IRI="https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s/1013355"/>
         <Literal datatypeIRI="&xsd;float">48.0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#isDataHolding"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/mmrs7/ontologies/2017/8/1013355"/>
+        <NamedIndividual IRI="https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s/1013355"/>
         <Literal datatypeIRI="&xsd;boolean">true</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#isInProcessStatus"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/mmrs7/ontologies/2017/8/1013355"/>
+        <NamedIndividual IRI="https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s/1013355"/>
         <Literal datatypeIRI="&xsd;string">Refurbished_Sold</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
@@ -1329,19 +1329,19 @@
     </AnnotationAssertion>
     <AnnotationPropertyDomain>
         <AnnotationProperty IRI="#hasEndTime"/>
-        <IRI>#ManufacturingProcess</IRI>
+        <IRI>https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ManufacturingProcess</IRI>
     </AnnotationPropertyDomain>
     <AnnotationPropertyDomain>
         <AnnotationProperty IRI="#hasEndTime"/>
-        <IRI>#Recycling</IRI>
+        <IRI>https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#Recycling</IRI>
     </AnnotationPropertyDomain>
     <AnnotationPropertyDomain>
         <AnnotationProperty IRI="#hasStartTime"/>
-        <IRI>#ManufacturingProcess</IRI>
+        <IRI>https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ManufacturingProcess</IRI>
     </AnnotationPropertyDomain>
     <AnnotationPropertyDomain>
         <AnnotationProperty IRI="#hasStartTime"/>
-        <IRI>#Recycling</IRI>
+        <IRI>https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#Recycling</IRI>
     </AnnotationPropertyDomain>
 </Ontology>
 

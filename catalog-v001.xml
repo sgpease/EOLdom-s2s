@@ -2,8 +2,8 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl" uri="https://raw.githubusercontent.com/BFO-ontology/BFO/master/releases/2.0/bfo.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1526650472058" name="http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22" uri="s2s-cost.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1526650472058" name="http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing" uri="EOLdom-s2s.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1526650472058" name="shadowed:http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing" uri="rdf-xml/EOLdom-s2s.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1526651352703" name="http://www.semanticweb.org/bset8/ontologies/2018/3/untitled-ontology-22" uri="s2s-cost.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1526651352703" name="http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing" uri="rdf-xml/EOLdom-s2s.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1526651352703" name="https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s" uri="EOLdom-s2s.owl"/>
     </group>
 </catalog>

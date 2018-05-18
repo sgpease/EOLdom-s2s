@@ -7,19 +7,19 @@
     <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY remanufacturing "http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#" >
+    <!ENTITY EOLdom-s2s "https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#" >
 ]>
 
 
-<rdf:RDF xmlns="http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing"
-     xml:base="http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing"
+<rdf:RDF xmlns="https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s"
+     xml:base="https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:EOLdom-s2s="https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:remanufacturing="http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing">
+    <owl:Ontology rdf:about="https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
     </owl:Ontology>
     
@@ -36,117 +36,117 @@
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#Processes -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#Processes -->
 
-    <owl:AnnotationProperty rdf:about="&remanufacturing;Processes"/>
+    <owl:AnnotationProperty rdf:about="&EOLdom-s2s;Processes"/>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#RequiresProcess -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#RequiresProcess -->
 
-    <owl:AnnotationProperty rdf:about="&remanufacturing;RequiresProcess"/>
+    <owl:AnnotationProperty rdf:about="&EOLdom-s2s;RequiresProcess"/>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#RequriesMethod -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#RequriesMethod -->
 
-    <owl:AnnotationProperty rdf:about="&remanufacturing;RequriesMethod"/>
+    <owl:AnnotationProperty rdf:about="&EOLdom-s2s;RequriesMethod"/>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#Supports -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#Supports -->
 
-    <owl:AnnotationProperty rdf:about="&remanufacturing;Supports"/>
+    <owl:AnnotationProperty rdf:about="&EOLdom-s2s;Supports"/>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#Updates -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#Updates -->
 
-    <owl:AnnotationProperty rdf:about="&remanufacturing;Updates"/>
+    <owl:AnnotationProperty rdf:about="&EOLdom-s2s;Updates"/>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#Uses -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#Uses -->
 
-    <owl:AnnotationProperty rdf:about="&remanufacturing;Uses"/>
+    <owl:AnnotationProperty rdf:about="&EOLdom-s2s;Uses"/>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasCapabilityFor -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasCapabilityFor -->
 
-    <owl:AnnotationProperty rdf:about="&remanufacturing;hasCapabilityFor"/>
+    <owl:AnnotationProperty rdf:about="&EOLdom-s2s;hasCapabilityFor"/>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasEndTime -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasEndTime -->
 
-    <owl:AnnotationProperty rdf:about="&remanufacturing;hasEndTime">
-        <rdfs:domain rdf:resource="&remanufacturing;ManufacturingProcess"/>
-        <rdfs:domain rdf:resource="&remanufacturing;Recycling"/>
+    <owl:AnnotationProperty rdf:about="&EOLdom-s2s;hasEndTime">
+        <rdfs:domain rdf:resource="&EOLdom-s2s;ManufacturingProcess"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;Recycling"/>
     </owl:AnnotationProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasMethod -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasMethod -->
 
-    <owl:AnnotationProperty rdf:about="&remanufacturing;hasMethod"/>
+    <owl:AnnotationProperty rdf:about="&EOLdom-s2s;hasMethod"/>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasPartFamily -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasPartFamily -->
 
-    <owl:AnnotationProperty rdf:about="&remanufacturing;hasPartFamily"/>
+    <owl:AnnotationProperty rdf:about="&EOLdom-s2s;hasPartFamily"/>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasPartFeature -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasPartFeature -->
 
-    <owl:AnnotationProperty rdf:about="&remanufacturing;hasPartFeature"/>
+    <owl:AnnotationProperty rdf:about="&EOLdom-s2s;hasPartFeature"/>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasRemanufacturingProcess -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasRemanufacturingProcess -->
 
-    <owl:AnnotationProperty rdf:about="&remanufacturing;hasRemanufacturingProcess"/>
+    <owl:AnnotationProperty rdf:about="&EOLdom-s2s;hasRemanufacturingProcess"/>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasStartTime -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasStartTime -->
 
-    <owl:AnnotationProperty rdf:about="&remanufacturing;hasStartTime">
-        <rdfs:domain rdf:resource="&remanufacturing;ManufacturingProcess"/>
-        <rdfs:domain rdf:resource="&remanufacturing;Recycling"/>
+    <owl:AnnotationProperty rdf:about="&EOLdom-s2s;hasStartTime">
+        <rdfs:domain rdf:resource="&EOLdom-s2s;ManufacturingProcess"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;Recycling"/>
     </owl:AnnotationProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasStatus -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasStatus -->
 
-    <owl:AnnotationProperty rdf:about="&remanufacturing;hasStatus"/>
+    <owl:AnnotationProperty rdf:about="&EOLdom-s2s;hasStatus"/>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasType -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasType -->
 
-    <owl:AnnotationProperty rdf:about="&remanufacturing;hasType"/>
+    <owl:AnnotationProperty rdf:about="&EOLdom-s2s;hasType"/>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#holds -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#holds -->
 
-    <owl:AnnotationProperty rdf:about="&remanufacturing;holds"/>
+    <owl:AnnotationProperty rdf:about="&EOLdom-s2s;holds"/>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#isPartOf -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#isPartOf -->
 
-    <owl:AnnotationProperty rdf:about="&remanufacturing;isPartOf"/>
+    <owl:AnnotationProperty rdf:about="&EOLdom-s2s;isPartOf"/>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#requires -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#requires -->
 
-    <owl:AnnotationProperty rdf:about="&remanufacturing;requires"/>
+    <owl:AnnotationProperty rdf:about="&EOLdom-s2s;requires"/>
     
 
 
@@ -161,84 +161,84 @@
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#IsPerformedBy -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#IsPerformedBy -->
 
-    <owl:ObjectProperty rdf:about="&remanufacturing;IsPerformedBy">
-        <rdfs:subPropertyOf rdf:resource="&remanufacturing;ocurrent_part_of"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&remanufacturing;StripScrapper"/>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&remanufacturing;ITTechnicians"/>
-                            <rdf:Description rdf:about="&remanufacturing;PhoneTechnician"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;IsPerformedBy">
+        <rdfs:subPropertyOf rdf:resource="&EOLdom-s2s;ocurrent_part_of"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&remanufacturing;Recycle"/>
+                    <rdf:Description rdf:about="&EOLdom-s2s;Recycle"/>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&remanufacturing;Assemble"/>
-                            <rdf:Description rdf:about="&remanufacturing;Clean"/>
-                            <rdf:Description rdf:about="&remanufacturing;Disassemble"/>
-                            <rdf:Description rdf:about="&remanufacturing;Inspect"/>
-                            <rdf:Description rdf:about="&remanufacturing;Repair"/>
+                            <rdf:Description rdf:about="&EOLdom-s2s;Assemble"/>
+                            <rdf:Description rdf:about="&EOLdom-s2s;Clean"/>
+                            <rdf:Description rdf:about="&EOLdom-s2s;Disassemble"/>
+                            <rdf:Description rdf:about="&EOLdom-s2s;Inspect"/>
+                            <rdf:Description rdf:about="&EOLdom-s2s;Repair"/>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&EOLdom-s2s;StripScrapper"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&EOLdom-s2s;ITTechnicians"/>
+                            <rdf:Description rdf:about="&EOLdom-s2s;PhoneTechnician"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#Requires -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#Requires -->
 
-    <owl:ObjectProperty rdf:about="&remanufacturing;Requires">
-        <rdfs:subPropertyOf rdf:resource="&remanufacturing;ocurrent_part_of"/>
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;Requires">
+        <rdfs:subPropertyOf rdf:resource="&EOLdom-s2s;ocurrent_part_of"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;Requires"/>
+                <owl:onClass rdf:resource="&EOLdom-s2s;ProductComponent"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&remanufacturing;Assemble"/>
-                    <rdf:Description rdf:about="&remanufacturing;Clean"/>
-                    <rdf:Description rdf:about="&remanufacturing;Disassemble"/>
-                    <rdf:Description rdf:about="&remanufacturing;Inspect"/>
-                    <rdf:Description rdf:about="&remanufacturing;Repair"/>
+                    <rdf:Description rdf:about="&EOLdom-s2s;Assemble"/>
+                    <rdf:Description rdf:about="&EOLdom-s2s;Clean"/>
+                    <rdf:Description rdf:about="&EOLdom-s2s;Disassemble"/>
+                    <rdf:Description rdf:about="&EOLdom-s2s;Inspect"/>
+                    <rdf:Description rdf:about="&EOLdom-s2s;Repair"/>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;Requires"/>
-                <owl:onClass rdf:resource="&remanufacturing;ProductComponent"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:range>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;Requires"/>
-                <owl:someValuesFrom rdf:resource="&remanufacturing;Machine"/>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;Requires"/>
+                <owl:someValuesFrom rdf:resource="&EOLdom-s2s;Machine"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#contains -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#contains -->
 
-    <owl:ObjectProperty rdf:about="&remanufacturing;contains">
-        <rdfs:domain rdf:resource="&remanufacturing;ProductAssembly"/>
-        <rdfs:subPropertyOf rdf:resource="&remanufacturing;hasType"/>
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;contains">
+        <rdfs:domain rdf:resource="&EOLdom-s2s;ProductAssembly"/>
+        <rdfs:subPropertyOf rdf:resource="&EOLdom-s2s;hasType"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;contains"/>
-                <owl:onClass rdf:resource="&remanufacturing;StorageCapacity"/>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;contains"/>
+                <owl:onClass rdf:resource="&EOLdom-s2s;StorageCapacity"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:range>
@@ -246,35 +246,35 @@
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#continuant_part_of -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#continuant_part_of -->
 
-    <owl:ObjectProperty rdf:about="&remanufacturing;continuant_part_of"/>
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;continuant_part_of"/>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#dependsOn -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#dependsOn -->
 
-    <owl:ObjectProperty rdf:about="&remanufacturing;dependsOn">
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;dependsOn">
         <rdfs:comment>value if part is functioning</rdfs:comment>
-        <rdfs:subPropertyOf rdf:resource="&remanufacturing;hasType"/>
+        <rdfs:subPropertyOf rdf:resource="&EOLdom-s2s;hasType"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;dependsOn"/>
-                <owl:onClass rdf:resource="&remanufacturing;StorageCapacity"/>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;dependsOn"/>
+                <owl:onClass rdf:resource="&EOLdom-s2s;StorageCapacity"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:range>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;dependsOn"/>
-                <owl:onClass rdf:resource="&remanufacturing;Model"/>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;dependsOn"/>
+                <owl:onClass rdf:resource="&EOLdom-s2s;Model"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:range>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;dependsOn"/>
-                <owl:onClass rdf:resource="&remanufacturing;ProductAssembly"/>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;dependsOn"/>
+                <owl:onClass rdf:resource="&EOLdom-s2s;ProductAssembly"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:range>
@@ -282,71 +282,71 @@
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#derives_from -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#derives_from -->
 
-    <owl:ObjectProperty rdf:about="&remanufacturing;derives_from">
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;derives_from">
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
-        <rdfs:domain rdf:resource="&remanufacturing;Assemble"/>
-        <rdfs:domain rdf:resource="&remanufacturing;DataErase"/>
-        <rdfs:domain rdf:resource="&remanufacturing;Disassemble"/>
-        <rdfs:domain rdf:resource="&remanufacturing;Inspect"/>
-        <rdfs:domain rdf:resource="&remanufacturing;Recycle"/>
-        <rdfs:domain rdf:resource="&remanufacturing;Repair"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;Assemble"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;DataErase"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;Disassemble"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;Inspect"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;Recycle"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;Repair"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasExternalCharacteristic -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasExternalCharacteristic -->
 
-    <owl:ObjectProperty rdf:about="&remanufacturing;hasExternalCharacteristic">
-        <rdfs:range rdf:resource="&remanufacturing;ChassisColour"/>
-        <rdfs:domain rdf:resource="&remanufacturing;ProductAssembly"/>
-        <rdfs:subPropertyOf rdf:resource="&remanufacturing;hasType"/>
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;hasExternalCharacteristic">
+        <rdfs:range rdf:resource="&EOLdom-s2s;ChassisColour"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;ProductAssembly"/>
+        <rdfs:subPropertyOf rdf:resource="&EOLdom-s2s;hasType"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasInternalCharacteristic -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasInternalCharacteristic -->
 
-    <owl:ObjectProperty rdf:about="&remanufacturing;hasInternalCharacteristic">
-        <rdfs:domain rdf:resource="&remanufacturing;ProductAssembly"/>
-        <rdfs:range rdf:resource="&remanufacturing;SpecificVolume"/>
-        <rdfs:subPropertyOf rdf:resource="&remanufacturing;hasType"/>
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;hasInternalCharacteristic">
+        <rdfs:domain rdf:resource="&EOLdom-s2s;ProductAssembly"/>
+        <rdfs:range rdf:resource="&EOLdom-s2s;SpecificVolume"/>
+        <rdfs:subPropertyOf rdf:resource="&EOLdom-s2s;hasType"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasLastProcess -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasLastProcess -->
 
-    <owl:ObjectProperty rdf:about="&remanufacturing;hasLastProcess">
-        <rdfs:subPropertyOf rdf:resource="&remanufacturing;ocurrent_part_of"/>
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;hasLastProcess">
+        <rdfs:subPropertyOf rdf:resource="&EOLdom-s2s;ocurrent_part_of"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasManufacturingResource -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasManufacturingResource -->
 
-    <owl:ObjectProperty rdf:about="&remanufacturing;hasManufacturingResource">
-        <rdfs:domain rdf:resource="&remanufacturing;FacilityResources"/>
-        <rdfs:subPropertyOf rdf:resource="&remanufacturing;continuant_part_of"/>
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;hasManufacturingResource">
+        <rdfs:domain rdf:resource="&EOLdom-s2s;FacilityResources"/>
+        <rdfs:subPropertyOf rdf:resource="&EOLdom-s2s;continuant_part_of"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;hasManufacturingResource"/>
-                <owl:someValuesFrom rdf:resource="&remanufacturing;Machine"/>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;hasManufacturingResource"/>
+                <owl:someValuesFrom rdf:resource="&EOLdom-s2s;Machine"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasOutputQuality -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasOutputQuality -->
 
-    <owl:ObjectProperty rdf:about="&remanufacturing;hasOutputQuality">
-        <rdfs:subPropertyOf rdf:resource="&remanufacturing;hasType"/>
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;hasOutputQuality">
+        <rdfs:subPropertyOf rdf:resource="&EOLdom-s2s;hasType"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;hasOutputQuality"/>
-                <owl:onClass rdf:resource="&remanufacturing;Grade"/>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;hasOutputQuality"/>
+                <owl:onClass rdf:resource="&EOLdom-s2s;Grade"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:domain>
@@ -354,75 +354,27 @@
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasProcessBoundary -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasProcessBoundary -->
 
-    <owl:ObjectProperty rdf:about="&remanufacturing;hasProcessBoundary">
-        <rdfs:domain rdf:resource="&remanufacturing;Assemble"/>
-        <rdfs:domain rdf:resource="&remanufacturing;DataErase"/>
-        <rdfs:domain rdf:resource="&remanufacturing;Disassemble"/>
-        <rdfs:domain rdf:resource="&remanufacturing;Inspect"/>
-        <rdfs:domain rdf:resource="&remanufacturing;Recycle"/>
-        <rdfs:domain rdf:resource="&remanufacturing;Repair"/>
-        <rdfs:subPropertyOf rdf:resource="&remanufacturing;ocurrent_part_of"/>
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;hasProcessBoundary">
+        <rdfs:domain rdf:resource="&EOLdom-s2s;Assemble"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;DataErase"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;Disassemble"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;Inspect"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;Recycle"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;Repair"/>
+        <rdfs:subPropertyOf rdf:resource="&EOLdom-s2s;ocurrent_part_of"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;hasProcessBoundary"/>
-                <owl:onClass rdf:resource="&remanufacturing;ProcessEnd"/>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;hasProcessBoundary"/>
+                <owl:onClass rdf:resource="&EOLdom-s2s;ProcessStart"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:range>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;hasProcessBoundary"/>
-                <owl:onClass rdf:resource="&remanufacturing;ProcessStart"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasRole -->
-
-    <owl:ObjectProperty rdf:about="&remanufacturing;hasRole">
-        <rdfs:domain rdf:resource="&remanufacturing;JobTitle"/>
-        <rdfs:subPropertyOf rdf:resource="&remanufacturing;continuant_part_of"/>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;hasRole"/>
-                <owl:someValuesFrom rdf:resource="&remanufacturing;ITTechnicians"/>
-            </owl:Restriction>
-        </rdfs:range>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;hasRole"/>
-                <owl:onClass rdf:resource="&remanufacturing;SalesManager"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:range>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;hasRole"/>
-                <owl:someValuesFrom rdf:resource="&remanufacturing;TechnicalSupervisor"/>
-            </owl:Restriction>
-        </rdfs:range>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;hasRole"/>
-                <owl:someValuesFrom rdf:resource="&remanufacturing;PhoneTechnician"/>
-            </owl:Restriction>
-        </rdfs:range>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;hasRole"/>
-                <owl:onClass rdf:resource="&remanufacturing;ManagingDirector"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:range>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;hasRole"/>
-                <owl:onClass rdf:resource="&remanufacturing;OperationsManager"/>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;hasProcessBoundary"/>
+                <owl:onClass rdf:resource="&EOLdom-s2s;ProcessEnd"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:range>
@@ -430,35 +382,83 @@
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasType -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasRole -->
 
-    <owl:ObjectProperty rdf:about="&remanufacturing;hasType">
-        <rdfs:range rdf:resource="&remanufacturing;ProductAssembly"/>
-        <rdfs:domain rdf:resource="&remanufacturing;ProductFamily"/>
-        <rdfs:subPropertyOf rdf:resource="&remanufacturing;continuant_part_of"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasWorth -->
-
-    <owl:ObjectProperty rdf:about="&remanufacturing;hasWorth">
-        <rdfs:domain rdf:resource="&remanufacturing;ProductAssembly"/>
-        <rdfs:subPropertyOf rdf:resource="&remanufacturing;hasType"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#identifiedBy -->
-
-    <owl:ObjectProperty rdf:about="&remanufacturing;identifiedBy">
-        <rdfs:range rdf:resource="&remanufacturing;Model"/>
-        <rdfs:domain rdf:resource="&remanufacturing;ProductAssembly"/>
-        <rdfs:subPropertyOf rdf:resource="&remanufacturing;hasType"/>
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;hasRole">
+        <rdfs:domain rdf:resource="&EOLdom-s2s;JobTitle"/>
+        <rdfs:subPropertyOf rdf:resource="&EOLdom-s2s;continuant_part_of"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;identifiedBy"/>
-                <owl:onClass rdf:resource="&remanufacturing;UniqueID"/>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;hasRole"/>
+                <owl:onClass rdf:resource="&EOLdom-s2s;OperationsManager"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;hasRole"/>
+                <owl:onClass rdf:resource="&EOLdom-s2s;SalesManager"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;hasRole"/>
+                <owl:someValuesFrom rdf:resource="&EOLdom-s2s;ITTechnicians"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;hasRole"/>
+                <owl:someValuesFrom rdf:resource="&EOLdom-s2s;PhoneTechnician"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;hasRole"/>
+                <owl:onClass rdf:resource="&EOLdom-s2s;ManagingDirector"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;hasRole"/>
+                <owl:someValuesFrom rdf:resource="&EOLdom-s2s;TechnicalSupervisor"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasType -->
+
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;hasType">
+        <rdfs:range rdf:resource="&EOLdom-s2s;ProductAssembly"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;ProductFamily"/>
+        <rdfs:subPropertyOf rdf:resource="&EOLdom-s2s;continuant_part_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasWorth -->
+
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;hasWorth">
+        <rdfs:domain rdf:resource="&EOLdom-s2s;ProductAssembly"/>
+        <rdfs:subPropertyOf rdf:resource="&EOLdom-s2s;hasType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#identifiedBy -->
+
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;identifiedBy">
+        <rdfs:range rdf:resource="&EOLdom-s2s;Model"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;ProductAssembly"/>
+        <rdfs:subPropertyOf rdf:resource="&EOLdom-s2s;hasType"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;identifiedBy"/>
+                <owl:onClass rdf:resource="&EOLdom-s2s;UniqueID"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:range>
@@ -466,46 +466,46 @@
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#isRecycleValueof -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#isRecycleValueof -->
 
-    <owl:ObjectProperty rdf:about="&remanufacturing;isRecycleValueof">
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;isRecycleValueof">
         <rdfs:comment>Value of raw materials</rdfs:comment>
-        <rdfs:subPropertyOf rdf:resource="&remanufacturing;hasType"/>
+        <rdfs:subPropertyOf rdf:resource="&EOLdom-s2s;hasType"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;isRecycleValueof"/>
-                <owl:someValuesFrom rdf:resource="&remanufacturing;ProductAssembly"/>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;isRecycleValueof"/>
+                <owl:someValuesFrom rdf:resource="&EOLdom-s2s;ProductAssembly"/>
             </owl:Restriction>
         </rdfs:range>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#is_a -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#is_a -->
 
-    <owl:ObjectProperty rdf:about="&remanufacturing;is_a">
-        <rdfs:range rdf:resource="&remanufacturing;ProductAssembly"/>
-        <rdfs:domain rdf:resource="&remanufacturing;ProductComponent"/>
-        <rdfs:subPropertyOf rdf:resource="&remanufacturing;continuant_part_of"/>
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;is_a">
+        <rdfs:range rdf:resource="&EOLdom-s2s;ProductAssembly"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;ProductComponent"/>
+        <rdfs:subPropertyOf rdf:resource="&EOLdom-s2s;continuant_part_of"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#ocurrent_part_of -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ocurrent_part_of -->
 
-    <owl:ObjectProperty rdf:about="&remanufacturing;ocurrent_part_of"/>
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;ocurrent_part_of"/>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#uses -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#uses -->
 
-    <owl:ObjectProperty rdf:about="&remanufacturing;uses">
-        <rdfs:domain rdf:resource="&remanufacturing;ProductAssembly"/>
-        <rdfs:subPropertyOf rdf:resource="&remanufacturing;hasType"/>
+    <owl:ObjectProperty rdf:about="&EOLdom-s2s;uses">
+        <rdfs:domain rdf:resource="&EOLdom-s2s;ProductAssembly"/>
+        <rdfs:subPropertyOf rdf:resource="&EOLdom-s2s;hasType"/>
         <rdfs:range>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;uses"/>
-                <owl:onClass rdf:resource="&remanufacturing;PowerSupply"/>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;uses"/>
+                <owl:onClass rdf:resource="&EOLdom-s2s;PowerSupply"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:range>
@@ -524,42 +524,42 @@
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#IMEI -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#IMEI -->
 
-    <owl:DatatypeProperty rdf:about="&remanufacturing;IMEI">
+    <owl:DatatypeProperty rdf:about="&EOLdom-s2s;IMEI">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:domain rdf:resource="&remanufacturing;IMEI"/>
-        <rdfs:subPropertyOf rdf:resource="&remanufacturing;LabelID"/>
         <rdfs:range rdf:resource="&xsd;int"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;IMEI"/>
+        <rdfs:subPropertyOf rdf:resource="&EOLdom-s2s;LabelID"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#LabelID -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#LabelID -->
 
-    <owl:DatatypeProperty rdf:about="&remanufacturing;LabelID">
+    <owl:DatatypeProperty rdf:about="&EOLdom-s2s;LabelID">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:domain rdf:resource="&remanufacturing;LabelID"/>
         <rdfs:range rdf:resource="&xsd;int"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;LabelID"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#Serial -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#Serial -->
 
-    <owl:DatatypeProperty rdf:about="&remanufacturing;Serial">
+    <owl:DatatypeProperty rdf:about="&EOLdom-s2s;Serial">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:subPropertyOf rdf:resource="&remanufacturing;LabelID"/>
-        <rdfs:domain rdf:resource="&remanufacturing;Serial"/>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&EOLdom-s2s;LabelID"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;Serial"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasEOLStatus -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasEOLStatus -->
 
-    <owl:DatatypeProperty rdf:about="&remanufacturing;hasEOLStatus">
-        <rdfs:domain rdf:resource="&remanufacturing;ProductAssembly"/>
+    <owl:DatatypeProperty rdf:about="&EOLdom-s2s;hasEOLStatus">
+        <rdfs:domain rdf:resource="&EOLdom-s2s;ProductAssembly"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -581,58 +581,58 @@
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasProcessEnd -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasProcessEnd -->
 
-    <owl:DatatypeProperty rdf:about="&remanufacturing;hasProcessEnd">
-        <rdfs:domain rdf:resource="&remanufacturing;ProcessEnd"/>
+    <owl:DatatypeProperty rdf:about="&EOLdom-s2s;hasProcessEnd">
+        <rdfs:domain rdf:resource="&EOLdom-s2s;ProcessEnd"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasProcessStart -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasProcessStart -->
 
-    <owl:DatatypeProperty rdf:about="&remanufacturing;hasProcessStart">
-        <rdfs:domain rdf:resource="&remanufacturing;ProcessStart"/>
+    <owl:DatatypeProperty rdf:about="&EOLdom-s2s;hasProcessStart">
+        <rdfs:domain rdf:resource="&EOLdom-s2s;ProcessStart"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasRecycledValue -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasRecycledValue -->
 
-    <owl:DatatypeProperty rdf:about="&remanufacturing;hasRecycledValue">
+    <owl:DatatypeProperty rdf:about="&EOLdom-s2s;hasRecycledValue">
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasRefurbishedValue -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasRefurbishedValue -->
 
-    <owl:DatatypeProperty rdf:about="&remanufacturing;hasRefurbishedValue">
+    <owl:DatatypeProperty rdf:about="&EOLdom-s2s;hasRefurbishedValue">
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#hasRunningCost -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#hasRunningCost -->
 
-    <owl:DatatypeProperty rdf:about="&remanufacturing;hasRunningCost"/>
+    <owl:DatatypeProperty rdf:about="&EOLdom-s2s;hasRunningCost"/>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#isDataHolding -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#isDataHolding -->
 
-    <owl:DatatypeProperty rdf:about="&remanufacturing;isDataHolding">
+    <owl:DatatypeProperty rdf:about="&EOLdom-s2s;isDataHolding">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:range rdf:resource="&xsd;boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#isInProcessStatus -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#isInProcessStatus -->
 
-    <owl:DatatypeProperty rdf:about="&remanufacturing;isInProcessStatus">
+    <owl:DatatypeProperty rdf:about="&EOLdom-s2s;isInProcessStatus">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:domain rdf:resource="&remanufacturing;ProductAssembly"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;ProductAssembly"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -684,17 +684,17 @@
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#isPaidWage -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#isPaidWage -->
 
-    <owl:DatatypeProperty rdf:about="&remanufacturing;isPaidWage">
-        <rdfs:domain rdf:resource="&remanufacturing;ITTechnicians"/>
-        <rdfs:domain rdf:resource="&remanufacturing;ManagingDirector"/>
-        <rdfs:domain rdf:resource="&remanufacturing;OperationsManager"/>
-        <rdfs:domain rdf:resource="&remanufacturing;PhoneTechnician"/>
-        <rdfs:domain rdf:resource="&remanufacturing;SalesManager"/>
-        <rdfs:domain rdf:resource="&remanufacturing;ShopFloorManager"/>
-        <rdfs:domain rdf:resource="&remanufacturing;StripScrapper"/>
-        <rdfs:domain rdf:resource="&remanufacturing;TechnicalSupervisor"/>
+    <owl:DatatypeProperty rdf:about="&EOLdom-s2s;isPaidWage">
+        <rdfs:domain rdf:resource="&EOLdom-s2s;ITTechnicians"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;ManagingDirector"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;OperationsManager"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;PhoneTechnician"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;SalesManager"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;ShopFloorManager"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;StripScrapper"/>
+        <rdfs:domain rdf:resource="&EOLdom-s2s;TechnicalSupervisor"/>
     </owl:DatatypeProperty>
     
 
@@ -710,348 +710,348 @@
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#Assemble -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#Assemble -->
 
-    <owl:Class rdf:about="&remanufacturing;Assemble">
+    <owl:Class rdf:about="&EOLdom-s2s;Assemble">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#AssetTrack -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#AssetTrack -->
 
-    <owl:Class rdf:about="&remanufacturing;AssetTrack">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;Inspect"/>
+    <owl:Class rdf:about="&EOLdom-s2s;AssetTrack">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;Inspect"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#ChassisColour -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ChassisColour -->
 
-    <owl:Class rdf:about="&remanufacturing;ChassisColour">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;RecoveryQuality"/>
+    <owl:Class rdf:about="&EOLdom-s2s;ChassisColour">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;RecoveryQuality"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#Clean -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#Clean -->
 
-    <owl:Class rdf:about="&remanufacturing;Clean">
+    <owl:Class rdf:about="&EOLdom-s2s;Clean">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#DataErase -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#DataErase -->
 
-    <owl:Class rdf:about="&remanufacturing;DataErase">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;Clean"/>
+    <owl:Class rdf:about="&EOLdom-s2s;DataErase">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;Clean"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#Disassemble -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#Disassemble -->
 
-    <owl:Class rdf:about="&remanufacturing;Disassemble">
+    <owl:Class rdf:about="&EOLdom-s2s;Disassemble">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#FacilityResources -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#FacilityResources -->
 
-    <owl:Class rdf:about="&remanufacturing;FacilityResources">
+    <owl:Class rdf:about="&EOLdom-s2s;FacilityResources">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#FailedtoDataErase -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#FailedtoDataErase -->
 
-    <owl:Class rdf:about="&remanufacturing;FailedtoDataErase">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;RealisedRisk"/>
+    <owl:Class rdf:about="&EOLdom-s2s;FailedtoDataErase">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;RealisedRisk"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#FunctionalTest -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#FunctionalTest -->
 
-    <owl:Class rdf:about="&remanufacturing;FunctionalTest">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;Inspect"/>
+    <owl:Class rdf:about="&EOLdom-s2s;FunctionalTest">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;Inspect"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#Grade -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#Grade -->
 
-    <owl:Class rdf:about="&remanufacturing;Grade">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;RecoveryQuality"/>
+    <owl:Class rdf:about="&EOLdom-s2s;Grade">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;RecoveryQuality"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#IMEI -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#IMEI -->
 
-    <owl:Class rdf:about="&remanufacturing;IMEI">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;UniqueID"/>
+    <owl:Class rdf:about="&EOLdom-s2s;IMEI">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;UniqueID"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#ITTechnicians -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ITTechnicians -->
 
-    <owl:Class rdf:about="&remanufacturing;ITTechnicians">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;JobTitle"/>
+    <owl:Class rdf:about="&EOLdom-s2s;ITTechnicians">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;JobTitle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#Inspect -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#Inspect -->
 
-    <owl:Class rdf:about="&remanufacturing;Inspect">
+    <owl:Class rdf:about="&EOLdom-s2s;Inspect">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#JobTitle -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#JobTitle -->
 
-    <owl:Class rdf:about="&remanufacturing;JobTitle">
+    <owl:Class rdf:about="&EOLdom-s2s;JobTitle">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#LabelID -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#LabelID -->
 
-    <owl:Class rdf:about="&remanufacturing;LabelID">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;UniqueID"/>
+    <owl:Class rdf:about="&EOLdom-s2s;LabelID">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;UniqueID"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#Machine -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#Machine -->
 
-    <owl:Class rdf:about="&remanufacturing;Machine">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;FacilityResources"/>
+    <owl:Class rdf:about="&EOLdom-s2s;Machine">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;FacilityResources"/>
         <rdfs:isDefinedBy>Manufacturing Rig</rdfs:isDefinedBy>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#ManagingDirector -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ManagingDirector -->
 
-    <owl:Class rdf:about="&remanufacturing;ManagingDirector">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;JobTitle"/>
+    <owl:Class rdf:about="&EOLdom-s2s;ManagingDirector">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;JobTitle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#ManufacturingRoute -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ManufacturingRoute -->
 
-    <owl:Class rdf:about="&remanufacturing;ManufacturingRoute">
+    <owl:Class rdf:about="&EOLdom-s2s;ManufacturingRoute">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#Model -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#Model -->
 
-    <owl:Class rdf:about="&remanufacturing;Model">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;RecoveryQuality"/>
+    <owl:Class rdf:about="&EOLdom-s2s;Model">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;RecoveryQuality"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#OperationsManager -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#OperationsManager -->
 
-    <owl:Class rdf:about="&remanufacturing;OperationsManager">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;JobTitle"/>
+    <owl:Class rdf:about="&EOLdom-s2s;OperationsManager">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;JobTitle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#PhoneTechnician -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#PhoneTechnician -->
 
-    <owl:Class rdf:about="&remanufacturing;PhoneTechnician">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;JobTitle"/>
+    <owl:Class rdf:about="&EOLdom-s2s;PhoneTechnician">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;JobTitle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#PowerSupply -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#PowerSupply -->
 
-    <owl:Class rdf:about="&remanufacturing;PowerSupply">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;RecoveryQuality"/>
+    <owl:Class rdf:about="&EOLdom-s2s;PowerSupply">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;RecoveryQuality"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#ProcessEnd -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ProcessEnd -->
 
-    <owl:Class rdf:about="&remanufacturing;ProcessEnd">
+    <owl:Class rdf:about="&EOLdom-s2s;ProcessEnd">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#ProcessStart -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ProcessStart -->
 
-    <owl:Class rdf:about="&remanufacturing;ProcessStart">
+    <owl:Class rdf:about="&EOLdom-s2s;ProcessStart">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#ProductAssembly -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ProductAssembly -->
 
-    <owl:Class rdf:about="&remanufacturing;ProductAssembly">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;ProductFamily"/>
+    <owl:Class rdf:about="&EOLdom-s2s;ProductAssembly">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;ProductFamily"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#ProductComponent -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ProductComponent -->
 
-    <owl:Class rdf:about="&remanufacturing;ProductComponent">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;ProductAssembly"/>
+    <owl:Class rdf:about="&EOLdom-s2s;ProductComponent">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;ProductAssembly"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#ProductFamily -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ProductFamily -->
 
-    <owl:Class rdf:about="&remanufacturing;ProductFamily">
+    <owl:Class rdf:about="&EOLdom-s2s;ProductFamily">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#RealisedRisk -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#RealisedRisk -->
 
-    <owl:Class rdf:about="&remanufacturing;RealisedRisk">
+    <owl:Class rdf:about="&EOLdom-s2s;RealisedRisk">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#RecoveryQuality -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#RecoveryQuality -->
 
-    <owl:Class rdf:about="&remanufacturing;RecoveryQuality">
+    <owl:Class rdf:about="&EOLdom-s2s;RecoveryQuality">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#Recycle -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#Recycle -->
 
-    <owl:Class rdf:about="&remanufacturing;Recycle">
+    <owl:Class rdf:about="&EOLdom-s2s;Recycle">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
         <rdfs:comment>Turn into raw materials</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#RecycleQuality -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#RecycleQuality -->
 
-    <owl:Class rdf:about="&remanufacturing;RecycleQuality">
+    <owl:Class rdf:about="&EOLdom-s2s;RecycleQuality">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#Repair -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#Repair -->
 
-    <owl:Class rdf:about="&remanufacturing;Repair">
+    <owl:Class rdf:about="&EOLdom-s2s;Repair">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#RequiresRefund -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#RequiresRefund -->
 
-    <owl:Class rdf:about="&remanufacturing;RequiresRefund">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;RealisedRisk"/>
+    <owl:Class rdf:about="&EOLdom-s2s;RequiresRefund">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;RealisedRisk"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#SalesManager -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#SalesManager -->
 
-    <owl:Class rdf:about="&remanufacturing;SalesManager">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;JobTitle"/>
+    <owl:Class rdf:about="&EOLdom-s2s;SalesManager">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;JobTitle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#Serial -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#Serial -->
 
-    <owl:Class rdf:about="&remanufacturing;Serial">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;UniqueID"/>
+    <owl:Class rdf:about="&EOLdom-s2s;Serial">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;UniqueID"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#ShopFloorManager -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ShopFloorManager -->
 
-    <owl:Class rdf:about="&remanufacturing;ShopFloorManager">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;JobTitle"/>
+    <owl:Class rdf:about="&EOLdom-s2s;ShopFloorManager">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;JobTitle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#SpecificVolume -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#SpecificVolume -->
 
-    <owl:Class rdf:about="&remanufacturing;SpecificVolume">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;RecycleQuality"/>
+    <owl:Class rdf:about="&EOLdom-s2s;SpecificVolume">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;RecycleQuality"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#StorageCapacity -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#StorageCapacity -->
 
-    <owl:Class rdf:about="&remanufacturing;StorageCapacity">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;RecoveryQuality"/>
+    <owl:Class rdf:about="&EOLdom-s2s;StorageCapacity">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;RecoveryQuality"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#StripScrapper -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#StripScrapper -->
 
-    <owl:Class rdf:about="&remanufacturing;StripScrapper">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;JobTitle"/>
+    <owl:Class rdf:about="&EOLdom-s2s;StripScrapper">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;JobTitle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#TechnicalSupervisor -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#TechnicalSupervisor -->
 
-    <owl:Class rdf:about="&remanufacturing;TechnicalSupervisor">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;JobTitle"/>
+    <owl:Class rdf:about="&EOLdom-s2s;TechnicalSupervisor">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;JobTitle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#UniqueID -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#UniqueID -->
 
-    <owl:Class rdf:about="&remanufacturing;UniqueID">
+    <owl:Class rdf:about="&EOLdom-s2s;UniqueID">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#VisualInspect -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#VisualInspect -->
 
-    <owl:Class rdf:about="&remanufacturing;VisualInspect">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;Inspect"/>
+    <owl:Class rdf:about="&EOLdom-s2s;VisualInspect">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;Inspect"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#Worker -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#Worker -->
 
-    <owl:Class rdf:about="&remanufacturing;Worker">
-        <rdfs:subClassOf rdf:resource="&remanufacturing;FacilityResources"/>
+    <owl:Class rdf:about="&EOLdom-s2s;Worker">
+        <rdfs:subClassOf rdf:resource="&EOLdom-s2s;FacilityResources"/>
     </owl:Class>
     
 
@@ -1067,220 +1067,220 @@
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/1013355 -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#AssetTrack -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mmrs7/ontologies/2017/8/1013355">
-        <rdf:type rdf:resource="&remanufacturing;ProductAssembly"/>
-        <remanufacturing:hasRefurbishedValue rdf:datatype="&xsd;float">48.0</remanufacturing:hasRefurbishedValue>
-        <remanufacturing:hasRecycledValue rdf:datatype="&xsd;float">8.0</remanufacturing:hasRecycledValue>
-        <remanufacturing:hasEOLStatus rdf:datatype="&xsd;string">Refurbished</remanufacturing:hasEOLStatus>
-        <remanufacturing:isInProcessStatus rdf:datatype="&xsd;string">Refurbished_Sold</remanufacturing:isInProcessStatus>
-        <remanufacturing:isDataHolding rdf:datatype="&xsd;boolean">true</remanufacturing:isDataHolding>
-        <remanufacturing:hasLastProcess rdf:resource="&remanufacturing;ReplaceBattery"/>
+    <owl:NamedIndividual rdf:about="&EOLdom-s2s;AssetTrack">
+        <rdf:type rdf:resource="&EOLdom-s2s;ProcessEnd"/>
+        <EOLdom-s2s:hasProcessStart rdf:datatype="&xsd;dateTime">2018-01-01T00:00:00Z</EOLdom-s2s:hasProcessStart>
+        <EOLdom-s2s:hasProcessEnd rdf:datatype="&xsd;dateTime">2018-01-01T00:15:00Z</EOLdom-s2s:hasProcessEnd>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#AssetTrack -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#BlanccoRig -->
 
-    <owl:NamedIndividual rdf:about="&remanufacturing;AssetTrack">
-        <rdf:type rdf:resource="&remanufacturing;ProcessEnd"/>
-        <remanufacturing:hasProcessStart rdf:datatype="&xsd;dateTime">2018-01-01T00:00:00Z</remanufacturing:hasProcessStart>
-        <remanufacturing:hasProcessEnd rdf:datatype="&xsd;dateTime">2018-01-01T00:15:00Z</remanufacturing:hasProcessEnd>
+    <owl:NamedIndividual rdf:about="&EOLdom-s2s;BlanccoRig">
+        <rdf:type rdf:resource="&EOLdom-s2s;Machine"/>
+        <EOLdom-s2s:hasRunningCost rdf:datatype="&xsd;float">1.0</EOLdom-s2s:hasRunningCost>
+        <EOLdom-s2s:hasManufacturingResource rdf:resource="&EOLdom-s2s;BlanccoRig"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#BlanccoRig -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#CZC142FSKR -->
 
-    <owl:NamedIndividual rdf:about="&remanufacturing;BlanccoRig">
-        <rdf:type rdf:resource="&remanufacturing;Machine"/>
-        <remanufacturing:hasRunningCost rdf:datatype="&xsd;float">1.0</remanufacturing:hasRunningCost>
-        <remanufacturing:hasManufacturingResource rdf:resource="&remanufacturing;BlanccoRig"/>
+    <owl:NamedIndividual rdf:about="&EOLdom-s2s;CZC142FSKR">
+        <rdf:type rdf:resource="&EOLdom-s2s;ProductAssembly"/>
+        <EOLdom-s2s:hasRecycledValue rdf:datatype="&xsd;float">10.0</EOLdom-s2s:hasRecycledValue>
+        <EOLdom-s2s:hasRefurbishedValue rdf:datatype="&xsd;float">35.0</EOLdom-s2s:hasRefurbishedValue>
+        <EOLdom-s2s:hasEOLStatus rdf:datatype="&xsd;string">Refurbished</EOLdom-s2s:hasEOLStatus>
+        <EOLdom-s2s:isInProcessStatus rdf:datatype="&xsd;string">Refurbished_Sold</EOLdom-s2s:isInProcessStatus>
+        <EOLdom-s2s:isDataHolding rdf:datatype="&xsd;boolean">false</EOLdom-s2s:isDataHolding>
+        <EOLdom-s2s:hasLastProcess rdf:resource="&EOLdom-s2s;DataErase"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#CZC142FSKR -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#DataErase -->
 
-    <owl:NamedIndividual rdf:about="&remanufacturing;CZC142FSKR">
-        <rdf:type rdf:resource="&remanufacturing;ProductAssembly"/>
-        <remanufacturing:hasRecycledValue rdf:datatype="&xsd;float">10.0</remanufacturing:hasRecycledValue>
-        <remanufacturing:hasRefurbishedValue rdf:datatype="&xsd;float">35.0</remanufacturing:hasRefurbishedValue>
-        <remanufacturing:hasEOLStatus rdf:datatype="&xsd;string">Refurbished</remanufacturing:hasEOLStatus>
-        <remanufacturing:isInProcessStatus rdf:datatype="&xsd;string">Refurbished_Sold</remanufacturing:isInProcessStatus>
-        <remanufacturing:isDataHolding rdf:datatype="&xsd;boolean">false</remanufacturing:isDataHolding>
-        <remanufacturing:hasLastProcess rdf:resource="&remanufacturing;DataErase"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#DataErase -->
-
-    <owl:NamedIndividual rdf:about="&remanufacturing;DataErase">
-        <rdf:type rdf:resource="&remanufacturing;ProcessEnd"/>
+    <owl:NamedIndividual rdf:about="&EOLdom-s2s;DataErase">
+        <rdf:type rdf:resource="&EOLdom-s2s;ProcessEnd"/>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;IsPerformedBy"/>
-                <owl:someValuesFrom rdf:resource="&remanufacturing;ITTechnicians"/>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;IsPerformedBy"/>
+                <owl:someValuesFrom rdf:resource="&EOLdom-s2s;ITTechnicians"/>
             </owl:Restriction>
         </rdf:type>
-        <remanufacturing:hasProcessStart rdf:datatype="&xsd;dateTime">2018-01-01T00:00:00Z</remanufacturing:hasProcessStart>
-        <remanufacturing:hasProcessEnd rdf:datatype="&xsd;dateTime">2018-01-01T01:40:00Z</remanufacturing:hasProcessEnd>
+        <EOLdom-s2s:hasProcessStart rdf:datatype="&xsd;dateTime">2018-01-01T00:00:00Z</EOLdom-s2s:hasProcessStart>
+        <EOLdom-s2s:hasProcessEnd rdf:datatype="&xsd;dateTime">2018-01-01T01:40:00Z</EOLdom-s2s:hasProcessEnd>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#FunctionalTest -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#FunctionalTest -->
 
-    <owl:NamedIndividual rdf:about="&remanufacturing;FunctionalTest">
-        <rdf:type rdf:resource="&remanufacturing;ProcessEnd"/>
-        <remanufacturing:hasProcessStart rdf:datatype="&xsd;dateTime">2018-01-01T00:00:00Z</remanufacturing:hasProcessStart>
-        <remanufacturing:hasProcessStart rdf:datatype="&xsd;dateTime">2018-01-01T00:40:00Z</remanufacturing:hasProcessStart>
+    <owl:NamedIndividual rdf:about="&EOLdom-s2s;FunctionalTest">
+        <rdf:type rdf:resource="&EOLdom-s2s;ProcessEnd"/>
+        <EOLdom-s2s:hasProcessStart rdf:datatype="&xsd;dateTime">2018-01-01T00:00:00Z</EOLdom-s2s:hasProcessStart>
+        <EOLdom-s2s:hasProcessStart rdf:datatype="&xsd;dateTime">2018-01-01T00:40:00Z</EOLdom-s2s:hasProcessStart>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#ITCoreTechnicianWage -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ITCoreTechnicianWage -->
 
-    <owl:NamedIndividual rdf:about="&remanufacturing;ITCoreTechnicianWage">
-        <rdf:type rdf:resource="&remanufacturing;ITTechnicians"/>
-        <remanufacturing:isPaidWage rdf:datatype="&xsd;float">7.0</remanufacturing:isPaidWage>
+    <owl:NamedIndividual rdf:about="&EOLdom-s2s;ITCoreTechnicianWage">
+        <rdf:type rdf:resource="&EOLdom-s2s;ITTechnicians"/>
+        <EOLdom-s2s:isPaidWage rdf:datatype="&xsd;float">7.0</EOLdom-s2s:isPaidWage>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#ManagingDirectorWage -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ManagingDirectorWage -->
 
-    <owl:NamedIndividual rdf:about="&remanufacturing;ManagingDirectorWage">
-        <rdf:type rdf:resource="&remanufacturing;ManagingDirector"/>
-        <remanufacturing:isPaidWage rdf:datatype="&xsd;float">8.0</remanufacturing:isPaidWage>
+    <owl:NamedIndividual rdf:about="&EOLdom-s2s;ManagingDirectorWage">
+        <rdf:type rdf:resource="&EOLdom-s2s;ManagingDirector"/>
+        <EOLdom-s2s:isPaidWage rdf:datatype="&xsd;float">8.0</EOLdom-s2s:isPaidWage>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#OperationsManagerWage -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#OperationsManagerWage -->
 
-    <owl:NamedIndividual rdf:about="&remanufacturing;OperationsManagerWage">
-        <rdf:type rdf:resource="&remanufacturing;OperationsManager"/>
-        <remanufacturing:isPaidWage rdf:datatype="&xsd;float">6.0</remanufacturing:isPaidWage>
+    <owl:NamedIndividual rdf:about="&EOLdom-s2s;OperationsManagerWage">
+        <rdf:type rdf:resource="&EOLdom-s2s;OperationsManager"/>
+        <EOLdom-s2s:isPaidWage rdf:datatype="&xsd;float">6.0</EOLdom-s2s:isPaidWage>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#PATTestingRig -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#PATTestingRig -->
 
-    <owl:NamedIndividual rdf:about="&remanufacturing;PATTestingRig">
-        <rdf:type rdf:resource="&remanufacturing;Machine"/>
-        <remanufacturing:hasRunningCost rdf:datatype="&xsd;float">2.0</remanufacturing:hasRunningCost>
-        <remanufacturing:hasManufacturingResource rdf:resource="&remanufacturing;PATTestingRig"/>
+    <owl:NamedIndividual rdf:about="&EOLdom-s2s;PATTestingRig">
+        <rdf:type rdf:resource="&EOLdom-s2s;Machine"/>
+        <EOLdom-s2s:hasRunningCost rdf:datatype="&xsd;float">2.0</EOLdom-s2s:hasRunningCost>
+        <EOLdom-s2s:hasManufacturingResource rdf:resource="&EOLdom-s2s;PATTestingRig"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#PhoneTechnicianWage -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#PhoneTechnicianWage -->
 
-    <owl:NamedIndividual rdf:about="&remanufacturing;PhoneTechnicianWage">
-        <rdf:type rdf:resource="&remanufacturing;PhoneTechnician"/>
-        <remanufacturing:isPaidWage rdf:datatype="&xsd;float">5.0</remanufacturing:isPaidWage>
+    <owl:NamedIndividual rdf:about="&EOLdom-s2s;PhoneTechnicianWage">
+        <rdf:type rdf:resource="&EOLdom-s2s;PhoneTechnician"/>
+        <EOLdom-s2s:isPaidWage rdf:datatype="&xsd;float">5.0</EOLdom-s2s:isPaidWage>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#ReplaceBattery -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ReplaceBattery -->
 
-    <owl:NamedIndividual rdf:about="&remanufacturing;ReplaceBattery">
-        <rdf:type rdf:resource="&remanufacturing;ProcessEnd"/>
+    <owl:NamedIndividual rdf:about="&EOLdom-s2s;ReplaceBattery">
+        <rdf:type rdf:resource="&EOLdom-s2s;ProcessEnd"/>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;IsPerformedBy"/>
-                <owl:someValuesFrom rdf:resource="&remanufacturing;PhoneTechnician"/>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;IsPerformedBy"/>
+                <owl:someValuesFrom rdf:resource="&EOLdom-s2s;PhoneTechnician"/>
             </owl:Restriction>
         </rdf:type>
-        <remanufacturing:hasProcessStart rdf:datatype="&xsd;dateTime">2018-01-01T00:00:00Z</remanufacturing:hasProcessStart>
-        <remanufacturing:hasProcessEnd rdf:datatype="&xsd;dateTime">2018-01-01T00:50:00Z</remanufacturing:hasProcessEnd>
+        <EOLdom-s2s:hasProcessStart rdf:datatype="&xsd;dateTime">2018-01-01T00:00:00Z</EOLdom-s2s:hasProcessStart>
+        <EOLdom-s2s:hasProcessEnd rdf:datatype="&xsd;dateTime">2018-01-01T00:50:00Z</EOLdom-s2s:hasProcessEnd>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#ReplaceCasing -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ReplaceCasing -->
 
-    <owl:NamedIndividual rdf:about="&remanufacturing;ReplaceCasing">
-        <rdf:type rdf:resource="&remanufacturing;ProcessEnd"/>
-        <remanufacturing:hasProcessStart rdf:datatype="&xsd;dateTime">2018-01-01T00:00:00Z</remanufacturing:hasProcessStart>
-        <remanufacturing:hasProcessEnd rdf:datatype="&xsd;dateTime">2018-01-01T00:20:00Z</remanufacturing:hasProcessEnd>
+    <owl:NamedIndividual rdf:about="&EOLdom-s2s;ReplaceCasing">
+        <rdf:type rdf:resource="&EOLdom-s2s;ProcessEnd"/>
+        <EOLdom-s2s:hasProcessStart rdf:datatype="&xsd;dateTime">2018-01-01T00:00:00Z</EOLdom-s2s:hasProcessStart>
+        <EOLdom-s2s:hasProcessEnd rdf:datatype="&xsd;dateTime">2018-01-01T00:20:00Z</EOLdom-s2s:hasProcessEnd>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#ReplaceRAM -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ReplaceRAM -->
 
-    <owl:NamedIndividual rdf:about="&remanufacturing;ReplaceRAM">
-        <rdf:type rdf:resource="&remanufacturing;ProcessEnd"/>
-        <remanufacturing:hasProcessStart rdf:datatype="&xsd;dateTime">2018-01-01T00:00:00Z</remanufacturing:hasProcessStart>
-        <remanufacturing:hasProcessEnd rdf:datatype="&xsd;dateTime">2018-01-01T01:50:00Z</remanufacturing:hasProcessEnd>
+    <owl:NamedIndividual rdf:about="&EOLdom-s2s;ReplaceRAM">
+        <rdf:type rdf:resource="&EOLdom-s2s;ProcessEnd"/>
+        <EOLdom-s2s:hasProcessStart rdf:datatype="&xsd;dateTime">2018-01-01T00:00:00Z</EOLdom-s2s:hasProcessStart>
+        <EOLdom-s2s:hasProcessEnd rdf:datatype="&xsd;dateTime">2018-01-01T01:50:00Z</EOLdom-s2s:hasProcessEnd>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#ReplaceScreen -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ReplaceScreen -->
 
-    <owl:NamedIndividual rdf:about="&remanufacturing;ReplaceScreen">
-        <rdf:type rdf:resource="&remanufacturing;ProcessEnd"/>
-        <remanufacturing:hasProcessStart rdf:datatype="&xsd;dateTime">2018-01-01T00:00:00Z</remanufacturing:hasProcessStart>
-        <remanufacturing:hasProcessEnd rdf:datatype="&xsd;dateTime">2018-01-01T00:45:00Z</remanufacturing:hasProcessEnd>
+    <owl:NamedIndividual rdf:about="&EOLdom-s2s;ReplaceScreen">
+        <rdf:type rdf:resource="&EOLdom-s2s;ProcessEnd"/>
+        <EOLdom-s2s:hasProcessStart rdf:datatype="&xsd;dateTime">2018-01-01T00:00:00Z</EOLdom-s2s:hasProcessStart>
+        <EOLdom-s2s:hasProcessEnd rdf:datatype="&xsd;dateTime">2018-01-01T00:45:00Z</EOLdom-s2s:hasProcessEnd>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#SalesManagerWage -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#SalesManagerWage -->
 
-    <owl:NamedIndividual rdf:about="&remanufacturing;SalesManagerWage">
-        <rdf:type rdf:resource="&remanufacturing;SalesManager"/>
-        <remanufacturing:isPaidWage rdf:datatype="&xsd;float">4.0</remanufacturing:isPaidWage>
+    <owl:NamedIndividual rdf:about="&EOLdom-s2s;SalesManagerWage">
+        <rdf:type rdf:resource="&EOLdom-s2s;SalesManager"/>
+        <EOLdom-s2s:isPaidWage rdf:datatype="&xsd;float">4.0</EOLdom-s2s:isPaidWage>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#ShopFloorManagerWage -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#ShopFloorManagerWage -->
 
-    <owl:NamedIndividual rdf:about="&remanufacturing;ShopFloorManagerWage">
-        <rdf:type rdf:resource="&remanufacturing;ShopFloorManager"/>
-        <remanufacturing:isPaidWage rdf:datatype="&xsd;float">3.0</remanufacturing:isPaidWage>
+    <owl:NamedIndividual rdf:about="&EOLdom-s2s;ShopFloorManagerWage">
+        <rdf:type rdf:resource="&EOLdom-s2s;ShopFloorManager"/>
+        <EOLdom-s2s:isPaidWage rdf:datatype="&xsd;float">3.0</EOLdom-s2s:isPaidWage>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#StripScrapperWage -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#StripScrapperWage -->
 
-    <owl:NamedIndividual rdf:about="&remanufacturing;StripScrapperWage">
-        <rdf:type rdf:resource="&remanufacturing;StripScrapper"/>
-        <remanufacturing:isPaidWage rdf:datatype="&xsd;float">2.0</remanufacturing:isPaidWage>
+    <owl:NamedIndividual rdf:about="&EOLdom-s2s;StripScrapperWage">
+        <rdf:type rdf:resource="&EOLdom-s2s;StripScrapper"/>
+        <EOLdom-s2s:isPaidWage rdf:datatype="&xsd;float">2.0</EOLdom-s2s:isPaidWage>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#TechnicalSupervisorWage -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#TechnicalSupervisorWage -->
 
-    <owl:NamedIndividual rdf:about="&remanufacturing;TechnicalSupervisorWage">
-        <rdf:type rdf:resource="&remanufacturing;TechnicalSupervisor"/>
-        <remanufacturing:isPaidWage rdf:datatype="&xsd;float">1.0</remanufacturing:isPaidWage>
+    <owl:NamedIndividual rdf:about="&EOLdom-s2s;TechnicalSupervisorWage">
+        <rdf:type rdf:resource="&EOLdom-s2s;TechnicalSupervisor"/>
+        <EOLdom-s2s:isPaidWage rdf:datatype="&xsd;float">1.0</EOLdom-s2s:isPaidWage>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/mmrs7/ontologies/2017/8/remanufacturing#VisualInspect -->
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s#VisualInspect -->
 
-    <owl:NamedIndividual rdf:about="&remanufacturing;VisualInspect">
-        <rdf:type rdf:resource="&remanufacturing;ProcessEnd"/>
+    <owl:NamedIndividual rdf:about="&EOLdom-s2s;VisualInspect">
+        <rdf:type rdf:resource="&EOLdom-s2s;ProcessEnd"/>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&remanufacturing;IsPerformedBy"/>
-                <owl:someValuesFrom rdf:resource="&remanufacturing;PhoneTechnician"/>
+                <owl:onProperty rdf:resource="&EOLdom-s2s;IsPerformedBy"/>
+                <owl:someValuesFrom rdf:resource="&EOLdom-s2s;PhoneTechnician"/>
             </owl:Restriction>
         </rdf:type>
-        <remanufacturing:hasProcessStart rdf:datatype="&xsd;dateTime">2018-01-01T00:00:00Z</remanufacturing:hasProcessStart>
-        <remanufacturing:hasProcessEnd rdf:datatype="&xsd;dateTime">2018-01-01T00:20:00Z</remanufacturing:hasProcessEnd>
+        <EOLdom-s2s:hasProcessStart rdf:datatype="&xsd;dateTime">2018-01-01T00:00:00Z</EOLdom-s2s:hasProcessStart>
+        <EOLdom-s2s:hasProcessEnd rdf:datatype="&xsd;dateTime">2018-01-01T00:20:00Z</EOLdom-s2s:hasProcessEnd>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s/1013355 -->
+
+    <owl:NamedIndividual rdf:about="https://bitbucket.org/ginipease/remanontologys2s/raw/master/rdf-xml/EOLdom-s2s/1013355">
+        <rdf:type rdf:resource="&EOLdom-s2s;ProductAssembly"/>
+        <EOLdom-s2s:hasRefurbishedValue rdf:datatype="&xsd;float">48.0</EOLdom-s2s:hasRefurbishedValue>
+        <EOLdom-s2s:hasRecycledValue rdf:datatype="&xsd;float">8.0</EOLdom-s2s:hasRecycledValue>
+        <EOLdom-s2s:hasEOLStatus rdf:datatype="&xsd;string">Refurbished</EOLdom-s2s:hasEOLStatus>
+        <EOLdom-s2s:isInProcessStatus rdf:datatype="&xsd;string">Refurbished_Sold</EOLdom-s2s:isInProcessStatus>
+        <EOLdom-s2s:isDataHolding rdf:datatype="&xsd;boolean">true</EOLdom-s2s:isDataHolding>
+        <EOLdom-s2s:hasLastProcess rdf:resource="&EOLdom-s2s;ReplaceBattery"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
