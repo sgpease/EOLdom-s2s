@@ -26,7 +26,18 @@ SELECT ?Location ?Time ?X ?Y ?Z ?PacketsSent ?Rate WHERE \{\
 {\field{\*\fldinst{HYPERLINK "https://bitbucket.org/ginipease/remanontologys2s/raw/master/remanufacturing_v2.owl"}}{\fldrslt https://bitbucket.org/ginipease/remanontologys2s/raw/master/remanufacturing_v2.owl}}\
 \
 \
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\
+prefix owl: <http://www.w3.org/2002/07/owl#>\
+PREFIX s2s: <https://raw.githubusercontent.com/sgpease/EOLdom-s2s/master/rdf-xml/remanufacturing_v2#>\
+select ?ind ?lastprocess ?endT ?sttT  where \{ \
+  ?ind rdf:type s2s:ProductAssembly .\
+  ?ind s2s:hasLastProcess ?lastprocess .\
+  ?lastprocess s2s:hasProcessEnd ?endT .\
+  ?lastprocess s2s:hasProcessStart ?sttT .\
+\} ORDER BY ASC(?ind)\
 \
+\'97\'97\
 \
 PREFIX s2s: <{\field{\*\fldinst{HYPERLINK "https://bitbucket.org/ginipease/remanontologys2s/raw/master/remanufacturing_v2.owl"}}{\fldrslt https://raw.githubusercontent.com/sgpease/EOLdom-s2s/master/rdf-xml/remanufacturing_v2}}#>\
 select ?ind ?lastprocess ?endT ?sttT ?duration ?role where \{ \
